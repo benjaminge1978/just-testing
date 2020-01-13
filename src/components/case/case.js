@@ -14,7 +14,7 @@ export default class Case extends React.Component {
 
         return (
             <div className={`cases-item cases-item--${itemClasses} cases-item--${index + 1}`} ref={this.triggerElement}>
-                        <AniLink to={caseSlug} className="cases-item__thumb">
+                        <AniLink to={caseSlug} className="cases-item__thumb" aria-label="case-study-thumb">
                             <Img fluid={fluidImg.fluid} alt={fluidImg.title} loading="lazy" className="animated-img"/>
                             {
                                 thumbDesc
@@ -26,7 +26,7 @@ export default class Case extends React.Component {
                             <span className="case-heading-arrow"><Arrow /></span>
                             <div className="case-heading-text">
                                 <p>{category}</p>
-                                <h3><AniLink className="animated-link" cover to={caseSlug} direction="up" bg="#FFFFFF">{title}</AniLink></h3>
+                                <h3><AniLink className="animated-link" cover to={caseSlug} direction="up" bg="#FFFFFF" aria-label="case-study-thumb">{title}</AniLink></h3>
                             </div>
                         </div>
             </div>

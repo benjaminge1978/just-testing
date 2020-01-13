@@ -8,7 +8,7 @@ export default () => {
             file(relativePath: {eq: "services/venue-sourcing.jpg"}) {
                 childImageSharp {
                     fluid(quality: 90, maxWidth: 500) {
-                        ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_withWebp
                     }
 
                 }

@@ -36,6 +36,7 @@ module.exports = {
         }
       }
     },
+    `@contentful/gatsby-transformer-contentful-richtext`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,

@@ -5,5 +5,16 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `4nlw2v6q7d79`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `jsDn84No7gst2-M71hNuSmoXmaHz7s5HdxYiA_Pscb0`,
+      },
+    },
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`,
+  ],
 }

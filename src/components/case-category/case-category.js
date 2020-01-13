@@ -66,8 +66,13 @@ export const query = graphql`
                 slug
                 thumbnail {
                     title
-                    fluid(maxWidth: 1200) {
-                        ...GatsbyContentfulFluid_withWebp
+                    fluid(maxWidth: 1000) {
+                        base64
+                        sizes
+                        src
+                        srcSet
+                        srcSetWebp
+                        srcWebp
                     }
                 }
                 caseCategories {

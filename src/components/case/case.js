@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Img from "gatsby-image";
 import PropsTypes from "prop-types";

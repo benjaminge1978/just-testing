@@ -7,6 +7,7 @@ import Banner from "../components/home-page/banner/banner";
 import Promo from "../components/home-page/promo/promo";
 import CasesUpdated from "../components/home-page/cases-updated/cases-updated";
 import Customers from "../components/home-page/customers/customers";
+import Services from "../components/home-page/services/services";
 
 const IndexPage = ({ data }) => {
     return (
@@ -18,7 +19,7 @@ const IndexPage = ({ data }) => {
             <ContainerLabelled className="cases-updated-section" label={<span className="section-label">Cases </span>}>
                 <CasesUpdated data={data}/>
             </ContainerLabelled>
-           
+           <Services />
             <ContainerLabelled className="customers-section" label={<span className="section-label">Customers </span>}>
                 <Customers />
             </ContainerLabelled>

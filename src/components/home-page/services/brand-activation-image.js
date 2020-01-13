@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 export default () => {
     const image = useStaticQuery(graphql`
         query BrandActivationImage {
-            file(relativePath: {eq: "./images/venue-sourcing.jpg"}) {
+            file(relativePath: {eq: "services/brand-activation.jpg"}) {
                 childImageSharp {
                     fluid(quality: 100) {
                         srcSet

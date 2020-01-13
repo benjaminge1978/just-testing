@@ -1,7 +1,6 @@
 import React from 'react'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import { Link } from 'gatsby'
 
 import './site-brand.scss'
 import Logo from '../../images/seventa-dark-logo.svg'

@@ -1,7 +1,7 @@
 import React from "react";
 import {gsap, TimelineMax} from "gsap";
 import { useStaticQuery, graphql } from "gatsby";
-
+import Img from "gatsby-image";
 import Arrow from "../../../images/arrow-down.svg"
 import Video from '../banner/video/video'
 
@@ -31,6 +31,10 @@ export default () => {
             <span>We love experiences.</span>
             <span>We create them.</span>
           </h1>
+          <Img className="mainBanner"
+                  fluid={bannerImage.file.childImageSharp.fluid}
+                  alt={bannerImage.file.childImageSharp.name}
+                />
           <Video />
         </div>
       </div>

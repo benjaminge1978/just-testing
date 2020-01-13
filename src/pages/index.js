@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import AnimatedLogo from "../components/home-page/animated-logo/animated-logo";
 import ContainerLabelled from "../components/container-labelled/container-labelled";
 import Banner from "../components/home-page/banner/banner";
 import Promo from "../components/home-page/promo/promo";
@@ -13,7 +14,7 @@ const IndexPage = ({ data }) => {
     return (
         <Layout>
             <SEO title="Seventa Events | Brand activation. Conferences. Event production. Event management. Venue sourcing" />
-              
+            <AnimatedLogo />
             <Banner />
             <Promo />
             <ContainerLabelled className="cases-updated-section" label={<span className="section-label">Cases </span>}>

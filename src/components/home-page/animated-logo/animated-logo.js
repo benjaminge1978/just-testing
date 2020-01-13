@@ -1,13 +1,6 @@
 import React, {Fragment} from "react";
 import gsap from "gsap";
 import { TimelineMax, Power3 } from "gsap/all";
-import SeventaS from "../banner/images/seventa-s";
-import SeventaE from "../banner/images/seventa-e";
-import SeventaV from "../banner/images/seventa-v";
-import SeventaE2 from "../banner/images/seventa-e2";
-import SeventaN from "../banner/images/seventa-n";
-import SeventaT from "../banner/images/seventa-t";
-import SeventaA from "../banner/images/seventa-a";
 import SeventaEvents from "../banner/images/seventa-events";
 
 import "./animated-logo.scss";
@@ -29,38 +22,41 @@ export default class extends React.Component {
     }
 
     componentDidMount() {
-        this._timelineMax//.staggerFrom(
-        //         this._animatedLogoItems,
-        //         1.3,
-        //         {
-        //             delay: 0.1,
-        //             y: "20px",
-        //             autoAlpha: 0,
-        //             ease:Power3.easeOut
-        //         },
-        //         0.07
-        //     );
-
-        // this._timelineMax.staggerTo(
-        //         this._animatedLogoItems,
-        //         0.5,
-        //         {
-        //             y: "-40px",
-        //             autoAlpha: 0,
-        //             ease: Power3.easeOut
-        //         },
-        //         0.03,
-        //         "-=0.2"
-        //     )
-            .to(
-                ".mask-block",
-                {
-                    duration: 1,
-                    scaleY: 0,
-                    transformOrigin: "top left",
-                    ease:Power3.easeOut
-                },
-                "-=0.4"
+        this._timelineMax
+        .to(
+            ".sev-overlay-inner",
+            {
+                delay:0.5,
+                duration: 2,
+                scaleY: 0,
+                transformOrigin: "top left",
+                ease:Power3.easeOut
+            }
+        )
+        .to(
+            ".mask-block",
+            {
+                duration: 1,
+                scaleY: 0,
+                transformOrigin: "top left",
+                ease:Power3.easeOut
+            },("-=0.7")
+        )
+        .to(
+            ".seventa-events",
+            {
+                delay:0.1,
+                duration: 0.3,
+                opacity:0,
+                y:-50,
+                ease:Power3.easeOut
+            },("-=0.9")
+        )
+            .from("iframe",
+            { 
+                opacity:0,
+                duration:1,
+            }
             )
             .play();
     }
@@ -70,18 +66,10 @@ export default class extends React.Component {
             this.state.showed
                 ? null
                 :   <Fragment>
-                        <div className="athene-intro-logo-wrapper">
-                            <div className="athene-intro-logo">
-                                <SeventaS setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaE setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaV setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaE2 setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaN setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaT setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaA setRef={img => this._animatedLogoItems.push(img)}/>
-                                <SeventaEvents setRef={img => this._animatedLogoItems.push(img)}/>
-                            </div>
-                        </div>
+                    <div className="sev-overlay">
+                    <SeventaEvents className="seventa-loader" /> 
+                    <div className="sev-overlay-inner"></div>
+                    </div>  
                         <div className="mask-block" ref={this.masBlockRef}/>
                     </Fragment>
         );

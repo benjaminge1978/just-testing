@@ -1,6 +1,5 @@
 import React from "react"
 import PropsTypes from "prop-types"
-import { Link } from "gatsby";
 import Img from "gatsby-image";
 import Arrow from "../../../images/case-study-arrow.svg";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
@@ -10,7 +9,7 @@ import './case-item.scss'
 
 const CaseItem = ({ slug, categories, caseTitle, thumbnail }) => (
     <div className="case-category__item">
-        <AniLink cover to={`/${slug}`} direction="up" bg="#FFFFFF">
+        <AniLink cover to={`/${slug}`} direction="up" bg="#FFFFFF" aria-label={caseTitle}>
             <Img
                 fluid={thumbnail.fluid}
                 alt={thumbnail.title}

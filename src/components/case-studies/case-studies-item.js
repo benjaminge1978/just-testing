@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import PropsTyps from "prop-types";
 import Img from "gatsby-image";
 import Arrow from "../../images/arrow-right.svg";

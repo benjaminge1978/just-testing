@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby";
 import PropTypes from "prop-types"
 import Arrow from "../../../images/arrow-left.svg";
 import CaseItem from "../../case-category/case-item/case-item";

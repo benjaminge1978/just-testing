@@ -1,7 +1,7 @@
 import React from "react";
 import {gsap, TimelineMax} from "gsap";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+
 import Arrow from "../../../images/arrow-down.svg"
 import Video from '../banner/video/video'
 

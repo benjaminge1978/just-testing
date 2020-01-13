@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Arrow from "../../../../src/images/arrow-right.svg";
 import BrandActivationImage from "./brand-activation-image";
 import ConferencesImage from "./conferences-image";

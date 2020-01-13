@@ -1,6 +1,5 @@
 import React from "react";
 import PropsTypes from "prop-types";
-import { Link } from "gatsby";
 import Img from "gatsby-image";
 import Arrow from "../../../images/arrow-right.svg";
 import AniLink from "gatsby-plugin-transition-link/AniLink";

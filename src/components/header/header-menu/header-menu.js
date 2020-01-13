@@ -2,7 +2,6 @@ import React from "react";
 import gsap from "gsap";
 import { TimelineLite, Power3, Back } from "gsap/all";
 import Menu from '../../menu/menu'
-import { Link } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 

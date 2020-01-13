@@ -31,26 +31,6 @@ export default IndexPage;
 
 export const query = graphql`
     query IndexPageQuery {
-        allContentfulCaseCategory(sort: {fields: name, order: ASC}) {
-            edges {
-                node {
-                    slug
-                    id
-                    name
-                    cases {
-                        thumbnail {
-                            fluid(maxWidth: 1800, quality: 80) {
-                              ...GatsbyContentfulFluid_withWebp_noBase64
-                            }
-                        }
-                        id
-                        title
-                        thumb_excerpt
-                        slug
-                    }
-                }
-            }
-        }
         allContentfulHomepageCaseStudy(sort: {fields: createdAt, order: ASC}) {
             edges {
                 node {
@@ -61,7 +41,7 @@ export const query = graphql`
                         slug
                     }
                     image {
-                        fluid(maxWidth: 1800, quality: 80) {
+                        fluid(maxWidth: 1000, quality: 80) {
                           ...GatsbyContentfulFluid_withWebp_noBase64
                         }
                     }

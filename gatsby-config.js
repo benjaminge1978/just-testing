@@ -27,6 +27,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lexend Deca'],
+          display: 'swap'
+        }
+      }
+    },
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,

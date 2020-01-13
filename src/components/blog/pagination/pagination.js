@@ -2,6 +2,8 @@ import React from "react";
 import PropsTypes from "prop-types";
 import { Link } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft } from 'react-icons/fa';
 /* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons"; */
 
@@ -34,7 +36,7 @@ const Pagination = ({maxPages, current}) => {
                 current === 1
                     ? null
                     :   <AniLink className="pagination__arrow" cover to={current > 2 ? `/blog/${current - 1}` : `blog`} direction="up" aria-label="Previous page">
-                          {/*}  <FontAwesomeIcon icon={faChevronLeft} /> */}
+                         <FaChevronRight /> 
                         </AniLink>
             }
 
@@ -62,7 +64,7 @@ const Pagination = ({maxPages, current}) => {
                 current === maxPages
                     ? null
                     :   <AniLink className="pagination__arrow" to={`/blog/${current + 1}`} aria-label="Next page">
-                          {/* }  <FontAwesomeIcon icon={faChevronRight} /> */}
+                          <FaChevronLeft /> 
                         </AniLink>
             }
 

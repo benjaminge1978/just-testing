@@ -1,6 +1,6 @@
 import React from "react";
 
-import SocialMenu from "./social-menu/social-menu";
+import SocialMenu from "./socialMenu/socialMenu";
 import Greybox from "./greybox/greybox";
 import ContainerLabelled from "../container-labelled/container-labelled";
 import Menu from "../menu/menu";

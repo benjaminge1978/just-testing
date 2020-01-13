@@ -12,6 +12,7 @@ export const socialMenu = () => {
                 href={item.url}
                 target="blank"
                 rel="noopener noreferrer"
+                aria-label="social-media"
               >
                 {item.icon}
               </a>

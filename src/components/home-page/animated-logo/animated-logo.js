@@ -48,7 +48,7 @@ export default class extends React.Component {
                 delay:0.1,
                 duration: 0.3,
                 opacity:0,
-                y:-50,
+                y:-10,
                 ease:Power3.easeOut
             },("-=0.9")
         )

@@ -6,7 +6,7 @@ import ContainerLabelled from "../container-labelled/container-labelled";
 import Menu from "../menu/menu";
 
 import '../footer/footer.scss';
-import SiteBrand from "../site-brand/site-brand";
+import SiteBrand from "../site-brand/site-brand-footer";
 
 export default () => (
     <footer className="site-footer">

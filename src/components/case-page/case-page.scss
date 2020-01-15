@@ -12,10 +12,9 @@
   }
 
   &__heading {
-
     p {
-
-      &.category-name, &.service-title {
+      &.category-name,
+      &.service-title {
         color: #9a9a9a;
       }
     }
@@ -40,18 +39,15 @@
       }
 
       .service {
-
         &-title {
           color: #9a9a9a;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
         }
-
       }
     }
   }
 
   &__thumbnail {
-
     svg {
       display: block;
       width: 40%;
@@ -66,7 +62,6 @@
 }
 
 .case-page {
-
   &-thumbnail {
     overflow: hidden;
     background: linear-gradient(to bottom, white 0%, white 25%, #efefef 25%);
@@ -94,7 +89,7 @@
       margin: 0;
     }
   }
-  
+
   &-text-1 {
     background-color: #efefef;
   }
@@ -120,12 +115,11 @@
   }
 
   &-big-image {
-
     .container-labelled__inner {
       display: flex;
       justify-content: flex-end;
     }
-    
+
     &__wrapper {
       position: relative;
       margin-bottom: 200px;
@@ -139,9 +133,9 @@
       img {
         margin: 0;
       }
-      
+
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 120%;
         height: 100%;
@@ -172,11 +166,8 @@
 }
 
 .section--see-more {
-
   .related-cases {
-
     .case-category__item {
-
       .gatsby-image-wrapper {
         padding-top: 100%;
       }
@@ -186,11 +177,8 @@
 
 @media all and (max-width: 1400px) {
   .case-item {
-
     .case-page {
-
       &-text-3 {
-
         .section-heading {
           padding-right: 100px;
           padding-left: 100px;
@@ -206,7 +194,6 @@
 
 @media all and (max-width: 992px) {
   .case-item {
-
     .section-heading {
       padding-top: 150px;
       padding-bottom: 150px;
@@ -218,16 +205,13 @@
   }
 
   .case-page {
-
     &-images-row {
-
       &__item {
         width: 100%;
       }
     }
 
     &-big-image {
-
       &__wrapper {
         margin-bottom: 0;
 
@@ -237,25 +221,22 @@
       }
     }
     &-text-3 {
-
       .section-heading {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 30px !important;
+        padding-left: 30px !important;
       }
 
       &__image {
         display: none;
       }
     }
-
   }
 }
 @media all and (max-width: 768px) {
   .case-item {
-
     &__heading {
       padding-top: 75px;
-      padding-bottom: 105px;
+      padding-bottom: 75px;
 
       h1 {
         font-size: 2rem;
@@ -267,8 +248,22 @@
     }
 
     .section-heading {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
+  .case-page {
+    &-images-row {
+      display: block;
+      padding: 30px;
+      &__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .case-page-big-image__wrapper {
+    max-width: 100%;
+  }
 }
+

@@ -1,5 +1,4 @@
 .case-studies {
-
   &-heading-links {
     list-style-type: none;
     margin: 35px 0 0 0;
@@ -22,10 +21,17 @@
   }
 
   &-section {
-    background: linear-gradient(to bottom, white 0%, white 150px, #efefef 150px, #efefef 75%, white 75%, white 100%);
+    background: linear-gradient(
+      to bottom,
+      white 0%,
+      white 150px,
+      #efefef 150px,
+      #efefef 75%,
+      white 75%,
+      white 100%
+    );
 
     .container-labelled {
-
       &__label {
         width: 15px;
         margin: 0% auto;
@@ -45,9 +51,7 @@
             color: inherit;
 
             .case-studies-list-item {
-
               &__thumb {
-
                 .gatsby-image-wrapper {
                   //padding-top: 70%;
                   height: 515px;
@@ -61,7 +65,7 @@
               }
 
               &__title {
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
 
                 a {
                   color: inherit;
@@ -69,7 +73,7 @@
               }
 
               &__excerpt {
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
 
               svg {
@@ -89,14 +93,11 @@
 
 @media all and (max-width: 992px) {
   .case-studies {
-
     &-section {
-
       .container-labelled {
-
         &__inner {
-          padding-right: 50px;
-          padding-left: 50px;
+          padding-right: 30px;
+          padding-left: 30px;
         }
       }
     }
@@ -105,22 +106,26 @@
 
 @media all and (max-width: 768px) {
   .case-studies {
+    &-heading-links {
+      li {
+        display: block;
+        margin: 0 50px 20px 0;
+      }
+    }
+  }
 
+  .case-studies {
     &-page {
-
       .page-heading {
         padding-top: 60px;
+        padding-bottom: 50px;
       }
     }
 
     &-section {
-
       .container-labelled {
-
         &__inner {
-
           .case-studies-list {
-
             .case-studies-category {
               width: 100%;
               margin-right: 0;
@@ -130,4 +135,67 @@
       }
     }
   }
+
+  .case-studies {
+    &-heading-links {
+      list-style-type: none;
+      margin: 35px 0 0 0;
+      padding: 0;
+  
+      li {
+        display: block;
+        margin: 0 0px 20px 0;
+  
+        a {
+          display: block;
+          color: inherit;
+          text-decoration: underline;
+        }
+  
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    &-section {
+      background: linear-gradient(
+        to bottom,
+        white 0%,
+        white 150px,
+        #efefef 150px,
+        #efefef 75%,
+        white 75%,
+        white 100%
+      );
+  
+      .container-labelled {
+  
+        &__inner {
+  
+          .case-studies-list {
+  
+            .case-studies-category {
+
+  
+              .case-studies-list-item {
+                &__thumb {
+                  .gatsby-image-wrapper {
+                    height: 200px;
+                    max-height: 200px;
+                    margin-bottom: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
 }
+
+

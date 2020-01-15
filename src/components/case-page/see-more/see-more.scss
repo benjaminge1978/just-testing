@@ -1,5 +1,4 @@
 .related-cases {
-
   &__heading {
     padding: 200px 0 90px 0;
 
@@ -29,13 +28,9 @@
 
 @media all and (max-width: 1200px) {
   .related-cases {
-
     &__list {
-
       .case-category__item {
-
         .case-category-item-desc {
-
           p {
             font-size: 1rem;
           }
@@ -51,9 +46,7 @@
 
 @media all and (max-width: 992px) {
   .related-cases {
-
     &__heading {
-
       h3 {
         font-size: 2.5rem;
       }
@@ -72,17 +65,18 @@
 }
 
 @media all and (max-width: 768px) {
+  .case-item {
+    margin-bottom: 0px!important;
+}
   .related-cases {
-
     &__heading {
-      padding: 50px;
+      padding: 20px 0px;
 
       h3 {
         font-size: 1.8rem;
       }
 
       p {
-
         svg {
           width: 40px;
         }
@@ -95,8 +89,11 @@
 
       .case-category__item {
         width: 100%;
-        padding: 0 50px;
+        padding: 0 0px;
       }
     }
+  }
+  .related-cases__heading a svg {
+    width: 20px;
   }
 }

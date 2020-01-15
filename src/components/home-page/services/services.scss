@@ -84,10 +84,16 @@
     }
 }
 
+@media only screen and (max-width: 1920px) {
+    .services-section {
+        padding: 120px 190px 250px 190px;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .services-section {
-        padding: 55px;
         margin-bottom: 0;
+        padding: 60px 30px;
 
         .services-heading {
 
@@ -167,5 +173,23 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 2400px) {
+    .services-section {
+        margin-bottom: 550px;
+    }
+}
+
+@media only screen and (min-width: 3000px) {
+    .services-section {
+        margin-bottom: 700px;
+    }
+}
+
+@media only screen and (min-width: 4000px) {
+    .services-section {
+        margin-bottom: 800px;
     }
 }

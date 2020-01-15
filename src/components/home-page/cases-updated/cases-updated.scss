@@ -1,7 +1,7 @@
 .cases-updated-section {
   display: flex;
   margin-bottom: 110px;
-  background: linear-gradient(to bottom, #EFEFEF 0%, #EFEFEF 10%, white 10%);
+  background: linear-gradient(to bottom, #efefef 0%, #efefef 10%, white 10%);
 
   .section-label {
     display: block;
@@ -15,7 +15,7 @@
       left: 5px;
       vertical-align: middle;
       width: 50px;
-  }
+    }
   }
 
   .cases-updated-list {
@@ -64,7 +64,6 @@
         grid-column-end: 6;
         grid-row-start: 8;
         grid-row-end: 11;
-        margin-bottom: 95px;
       }
 
       &__thumb {
@@ -95,7 +94,6 @@
       }
 
       &:hover {
-
         .cases-item__description {
           display: block;
         }
@@ -115,12 +113,13 @@
           padding-left: 10px;
           transform: translateY(15px);
 
-          p, h3 {
+          p,
+          h3 {
             margin-bottom: 0;
           }
 
           p {
-            color: #9A9A9A;
+            color: #9a9a9a;
             display: inline;
           }
 
@@ -139,21 +138,24 @@
 }
 
 @media all and (max-width: 1920px) {
-  .cases-updated-section .cases-updated-list .cases-item__heading .case-heading-text h3 {
+  .cases-updated-section
+    .cases-updated-list
+    .cases-item__heading
+    .case-heading-text
+    h3 {
     font-weight: 400;
     font-size: 30px;
-}
-.cases-updated-section .cases-updated-list .cases-item__heading svg {
-  display: block;
-  width: 30px;
-}
+  }
+  .cases-updated-section .cases-updated-list .cases-item__heading svg {
+    display: block;
+    width: 30px;
+  }
 }
 
 @media all and (max-width: 992px) {
   .cases-updated-section {
-
     .container-labelled__inner {
-      padding: 50px;
+      padding: 30px;
 
       .cases-updated-list {
         display: flex;
@@ -162,15 +164,44 @@
       }
     }
   }
-  .cases-updated-section .cases-updated-list .cases-item__heading .case-heading-text h3 {
+  .cases-updated-section
+    .cases-updated-list
+    .cases-item__heading
+    .case-heading-text
+    h3 {
     font-weight: 400;
     font-size: 20px;
-}
-.cases-updated-section .cases-updated-list .cases-item__heading svg {
-  display: block;
-  width: 27px;
-}
-.cases-updated-section {
-  margin-bottom:0px;
-}
+  }
+  .cases-updated-section .cases-updated-list .cases-item__heading svg {
+    display: block;
+    width: 27px;
+  }
+  .cases-updated-section {
+    margin-bottom: 0px;
+  }
+
+  .cases-updated-list {
+    .animated-img.gatsby-image-wrapper {
+      height: 100%;
+    }
+    .cases-item__thumb {
+      height: 250px;
+    }
+  }
+  .cases-updated-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .cases-item {
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      perspective: 1000px;
+
+      &__heading {
+        display: flex;
+        align-items: flex-start !important;
+        margin-top: 1.3rem;
+      }
+    }
+  }
 }

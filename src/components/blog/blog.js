@@ -18,8 +18,8 @@ export default ({data, pageContext}) => {
             <SEO title="Blog"/>
             <PageHeading
                 pageName="Blog"
-                pageTitle="The Seventa blog"
-                description="At Seventa we take pride in knowing our customers. Completely leverage existing real-time information. Dramatically orchestrate web-enabled mosql."
+                pageTitle="Stay informed and up to date on all things ‘Events'"
+                description="Our blog pieces give you an insight into our world at Seventa, snippets of knowledge from our amazing team, and all of our latest news."
                 className="blog-page-heading"
             />
             {

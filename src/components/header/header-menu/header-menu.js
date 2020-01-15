@@ -75,7 +75,7 @@ export default class extends React.Component {
         const submenuLinks = [
             {href: 'event-production', text: 'Event Production'},
             {href: 'conferences', text: 'Conferences'},
-            {href: 'brand-activation', text: 'Brand Activation'},
+            {href: 'brand-activation', text: 'Brand Activations'},
             {href: 'event-management', text: 'Event Management'},
             {href: 'venue-sourcing', text: 'Venue Sourcing'},
         ];

@@ -18,11 +18,11 @@ export default ({data}) => {
             <SEO title="Case Studies"/>
             <PageHeading
                 pageName="Case Studies"
-                pageTitle="Here is the title about the portfolio"
-                description="At Seventa we take pride in knowing our customers. Completely leverage existing real-time information. Dramatically orchestrate web-enabled mosql."
+                pageTitle="Here’s an insight into our world of events."
+                description="We’re extremely proud of our client relationships and we love creating unforgettable experiences and events. Our portfolio of work ranges from global brands to private clients and corporate companies. Take a look…"
             >
                 <ul className="case-studies-heading-links">
-                    <li><AniLink cover to="/brand-activation" direction="up" bg="#FFFFFF">Brand activation</AniLink></li>
+                    <li><AniLink cover to="/brand-activation" direction="up" bg="#FFFFFF">Brand activations</AniLink></li>
                     <li><AniLink cover to="/conferences" direction="up" bg="#FFFFFF">Conferences</AniLink></li>
                     <li><AniLink cover to="/event-production"direction="up" bg="#FFFFFF">Event production</AniLink></li>
                     <li><AniLink cover to="/event-management"direction="up" bg="#FFFFFF">Event management</AniLink></li>

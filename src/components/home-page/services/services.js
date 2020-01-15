@@ -22,10 +22,10 @@ export default () => (
         </div>
         <div className="services-cards">
             <div className="services-cards__item">
-                <AniLink cover to="/brand-activation" direction="up" bg="#FFF" aria-label="brand-activation">
+                <AniLink cover to="/brand-activation" direction="up" bg="#FFF" aria-label="brand-activations">
                     <BrandActivationImage />
                 </AniLink>
-                <h3><AniLink cover to="/brand-activation" direction="up" bg="#FFF" aria-label="brand-activation">Brand activation</AniLink></h3>
+                <h3><AniLink cover to="/brand-activation" direction="up" bg="#FFF" aria-label="brand-activations">Brand activation</AniLink></h3>
                 <p>On trend, flexible, and the perfect opportunity for some experiential marketing, we work closely with brands to produce unique experiences for consumers.</p>
                 <AniLink to="/brand-activation" direction="up" bg="#FFF" aria-label="brand-activation"><Arrow /></AniLink>
             </div>

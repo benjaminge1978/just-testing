@@ -175,17 +175,40 @@
   }
 }
 
+@media all and (max-width: 1920px) {
+  .case-item {
+    .section-heading {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+}
+
 @media all and (max-width: 1400px) {
   .case-item {
-    .case-page {
-      &-text-3 {
-        .section-heading {
-          padding-right: 100px;
-          padding-left: 100px;
-        }
+    .case-item {
+      margin-bottom: 90px;
 
-        &__image {
-          width: 70%;
+      .section-heading {
+
+        &__title {
+          margin-bottom: 65px;
+          max-width: 850px;
+        }
+      }
+    }
+
+    .case-item {
+      .case-page {
+        &-text-3 {
+          .section-heading {
+            padding-right: 100px;
+            padding-left: 100px;
+          }
+
+          &__image {
+            width: 70%;
+          }
         }
       }
     }
@@ -266,4 +289,3 @@
     max-width: 100%;
   }
 }
-

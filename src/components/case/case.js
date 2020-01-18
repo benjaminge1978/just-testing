@@ -31,20 +31,20 @@ const Case = props => {
       >
         <Controller>
           <Scene
-            reverse={false}
-            duration={800}
-            offset={30}
+            reverse={true}
+            duration={3000}
+            offset={-300}
             triggerElement={`.cases-item--${index + 1}`}
           >
             <Tween
-              from={{
-                opacity: 0,
-                scale: 1,
-                yPercent: 50,
-                transformOrigin: ["0% 100%"],
+              to={{
+                opacity: 1,
+                scale: 1.2,
+                yPercent: 5,
+                transformOrigin: "bottom center",
                 ease: "Power4.easeOut",
               }}
-              duration={1}
+              duration={2}
               stagger={0.1}
             >
               <div>

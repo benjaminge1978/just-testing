@@ -81,8 +81,8 @@ export default class extends React.Component {
         ];
 
         const topMenuLinks = [
-            {href: 'case-studies', text: 'Case Studies'},
-            {href: 'about', text: 'About'},
+            {href: 'case-studies', text: 'Portfolio'},
+            {href: 'about', text: 'Our story'},
             {href: 'blog', text: 'Blog'},
             {href: 'contact', text: 'Contact'},
         ];
@@ -90,7 +90,7 @@ export default class extends React.Component {
         return (
             <div className="header-navigation">
                 <nav className="header-menu-wrapper">
-                    <Menu id="header-menu" links={[{href: '', text: 'Services',  submenu: submenuLinks}].concat(topMenuLinks)}/>
+                    <Menu id="header-menu" links={[{href: '', text: 'What we do',  submenu: submenuLinks}].concat(topMenuLinks)}/>
                 </nav>
                 <div className="mobile-menu-wrapper" ref={this.menu}>
                     <div className="mobile-menu">
@@ -98,7 +98,7 @@ export default class extends React.Component {
                         <ul className="nav-block-1">
                             { this.outputMenuLinks(topMenuLinks) }
                         </ul>
-                        <h5 className="anim" ref={h5 => this.animatedTextNodes.push(h5)}>Services</h5>
+                        <h5 className="anim" ref={h5 => this.animatedTextNodes.push(h5)}>What we do</h5>
                         <ul className="nav-block-2">
                             { this.outputMenuLinks(submenuLinks) }
                         </ul>

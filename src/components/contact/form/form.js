@@ -4,7 +4,7 @@ import Arrow from "../../../images/arrow-right.svg";
 import "./form.scss";
 
 export default () => (
-    <form method="POST" action="#" name="contact-from" id="contact-form">
+    <form method="POST" action="https://formspree.io/mvokvpdv" name="contact-from" id="contact-form">
         <label>
             <input type="text" name="name" placeholder="Name" />
         </label>
@@ -15,7 +15,7 @@ export default () => (
             <input type="email" name="email" placeholder="Email" />
         </label>
         <label>
-            <textarea name="message" placeholder="How can we help?" />
+            <textarea name="message" rows="6" placeholder="How can we help?" />
         </label>
         <button type="button">Send message <Arrow /></button>
     </form>

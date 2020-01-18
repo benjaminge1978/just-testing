@@ -41,7 +41,6 @@ const Case = props => {
                 opacity: 1,
                 scale: 1.2,
                 yPercent: 5,
-                skew: "30px",
                 transformOrigin: "bottom center",
                 ease: "Power4.easeOut",
               }}

@@ -1,47 +1,101 @@
-import React from "react";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-import Img from "gatsby-image";
-import PropsTypes from "prop-types";
-import Arrow from "../../images/case-study-arrow.svg";
+import React, { useRef, useEffect } from "react"
+import { Power4 } from "gsap"
+import { Tween } from "react-gsap"
+import { Controller, Scene } from "react-scrollmagic"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Img from "gatsby-image"
+import Arrow from "../../images/case-study-arrow.svg"
 
-import "./case.scss";
+import "./case.scss"
 
-export default class Case extends React.Component {
-    render() {
-        const { index, thumbDesc, title,category, slug, fluidImg } = this.props;
-        const itemClasses = index % 2 === 0 ? 'left' : 'right';
-        const caseSlug = `/${slug}`;
+const Case = props => {
+  let picOverlay = useRef(null)
 
-        return (
-            <div className={`cases-item cases-item--${itemClasses} cases-item--${index + 1}`} ref={this.triggerElement}>
-                        <AniLink to={caseSlug} className="cases-item__thumb" aria-label="case-study-thumb">
-                            <Img fluid={fluidImg.fluid} alt={fluidImg.title} loading="lazy" className="animated-img"/>
-                            {
-                                thumbDesc
-                                    ? <span className="cases-item__description">{thumbDesc}</span>
-                                    : null
-                            }
-                        </AniLink>
-                        <div className="cases-item__heading">
-                            <span className="case-heading-arrow"><Arrow /></span>
-                            <div className="case-heading-text">
-                                <p>{category}</p>
-                                <h3><AniLink className="animated-link" cover to={caseSlug} direction="up" bg="#FFFFFF" aria-label="case-study-thumb">{title}</AniLink></h3>
-                            </div>
-                        </div>
+  useEffect(() => {
+    console.log(picOverlay)
+  })
+
+  const { index, thumbDesc, title, category, slug, fluidImg } = props
+  const itemClasses = index % 2 === 0 ? "left" : "right"
+  const caseSlug = `/${slug}`
+
+  return (
+    <div
+      className={`cases-item cases-item--${itemClasses} cases-item--${index +
+        1}`}
+    >
+      <AniLink
+        to={caseSlug}
+        className="cases-item__thumb"
+        aria-label="case-study-thumb"
+      >
+        <Controller>
+          <Scene
+            reverse={false}
+            duration={800}
+            offset={30}
+            triggerElement={`.cases-item--${index + 1}`}
+          >
+            <Tween
+              from={{
+                opacity: 0,
+                scale: 1,
+                yPercent: 50,
+                transformOrigin: ["0% 100%"],
+                ease: "Power4.easeOut",
+              }}
+              duration={1}
+              stagger={0.1}
+            >
+              <div>
+                <Img
+                  ref={el => (picOverlay = el)}
+                  fluid={fluidImg.fluid}
+                  alt={fluidImg.title}
+                  loading="lazy"
+                  className="animated-img"
+                />
+              </div>
+            </Tween>
+          </Scene>
+        </Controller>
+        {thumbDesc ? (
+          <span className="cases-item__description">{thumbDesc}</span>
+        ) : null}
+      </AniLink>
+      <Controller>
+        <Scene
+          reverse={false}
+          duration={500}
+          offset={30}
+          triggerElement={`.cases-item--${index + 1}`}
+        >
+          <Tween staggerFrom={{ y: 90, opacity: 0, ease: Power4.easeOut }}>
+            <div className="cases-item__heading">
+              <span className="case-heading-arrow">
+                <Arrow />
+              </span>
+              <div className="case-heading-text">
+                <p>{category}</p>
+                <h3>
+                  <AniLink
+                    className="animated-link"
+                    cover
+                    to={caseSlug}
+                    direction="up"
+                    bg="#FFFFFF"
+                    aria-label="case-study-thumb"
+                  >
+                    {title}
+                  </AniLink>
+                </h3>
+              </div>
             </div>
-        )
-    }
+          </Tween>
+        </Scene>
+      </Controller>
+    </div>
+  )
 }
 
-Case.propTypes = {
-    fluidImg: PropsTypes.object.isRequired,
-    category: PropsTypes.string.isRequired,
-    thumbDesc: PropsTypes.string,
-    index: PropsTypes.number.isRequired,
-    slug: PropsTypes.string.isRequired,
-};
-
-Case.defaultProps = {
-    thumbDesc: ''
-};
+export default Case

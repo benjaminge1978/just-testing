@@ -17,6 +17,6 @@ export default () => (
         <label>
             <textarea name="message" rows="6" placeholder="How can we help?" />
         </label>
-        <button type="button">Send message <Arrow /></button>
+        <button type="submit" value="Send">Send message <Arrow /></button>
     </form>
 )

@@ -6,7 +6,7 @@ import ContainerLabelled from "../container-labelled/container-labelled"
 import Menu from "../menu/menu"
 
 import "../footer/footer.scss"
-import SiteBrand from "../site-brand/site-brand"
+import SiteBrandFooter from "../site-brand/site-brand-footer"
 
 export default () => (
   <footer className="site-footer">
@@ -16,7 +16,7 @@ export default () => (
         <>
           <span className="greybox-lets-talk">Let's talk </span>
           <span className="greybox-site-brand">
-            <SiteBrand />
+            <SiteBrandFooter />
           </span>
         </>
       }

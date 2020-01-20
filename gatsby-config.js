@@ -14,11 +14,12 @@ module.exports = {
     description: `We organise events, and we do them well. We create memorable, rewarding and engaging experiences for our clients’ events. Find out more here.`,
     author: `@milkisnice1`,
     contactEmail: `info@seventa.co.uk`,
-    twitterUsername: "@seventa",
+    twitterUsername: "SeventaEvents",
     image:'/seventa-cover.jpg',
-    siteUrl:'https://seventa.co.uk',
+    siteUrl:'https://seventa.netlify.com',
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
@@ -62,5 +63,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://netlify.seventa.co.uk',
+        sitemap: 'https://netlify.seventa.co.uk/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }

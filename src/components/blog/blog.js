@@ -15,7 +15,7 @@ export default ({data, pageContext}) => {
 
     return (
         <Layout className="blog-page">
-            <SEO title="Blog"/>
+            <SEO title="The Seventa Blog"/>
             <PageHeading
                 pageName="Blog"
                 pageTitle="Stay informed and up to date on all things ‘Events'"

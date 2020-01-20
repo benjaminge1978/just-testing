@@ -12,10 +12,14 @@ module.exports = {
   siteMetadata: {
     title: `Seventa Events | Event Planning & Management Agency`,
     description: `We organise events, and we do them well. We create memorable, rewarding and engaging experiences for our clients’ events. Find out more here.`,
-    author: `@gatsbyjs`,
+    author: `@milkisnice1`,
     contactEmail: `info@seventa.co.uk`,
+    twitterUsername: "@seventa",
+    image:'/seventa-cover.jpg',
+    siteUrl:'https://seventa.co.uk',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
       options: {

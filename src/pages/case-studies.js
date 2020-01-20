@@ -14,10 +14,10 @@ export default ({ data }) => {
 
   return (
     <Layout className="case-studies-page">
-      <SEO title="Case Studies" />
+      <SEO title="Case Studies" description="Seventa events portfolio. See some of our event work" />
       <PageHeading
         pageName="Case Studies"
-        pageTitle="Here is the title about the portfolio"
+        pageTitle="Take a look at some of work"
         description="At Seventa we take pride in knowing our customers. Completely leverage existing real-time information. Dramatically orchestrate web-enabled mosql."
       >
         <ul className="case-studies-heading-links">

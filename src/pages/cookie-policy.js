@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 export default () => (
     <Layout>
-        <SEO title="Privacy Policy" />
+        <SEO title="Cookie Policy" description="The Seventa cookie policy"/>
         <div className="policy-container">
             <header className="policy-header">
                

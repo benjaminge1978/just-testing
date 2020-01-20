@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 
 export default () => (
     <Layout>
-        <SEO title="Privacy Policy" />
+        <SEO title="CSR Policy" description="The Seventa CSR policy"/>
         <div className="policy-container">
             <header className="policy-header">
                

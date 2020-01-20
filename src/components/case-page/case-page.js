@@ -21,7 +21,7 @@ const CasePage = ({data}) => {
 
     return (
         <Layout className="case-page-layout">
-            <SEO title={caseItem.title} />
+            <SEO title={caseItem.title} description={caseItem.title} />
             <div className="case-item">
                 <PageHeading
                     pageName={category.name}

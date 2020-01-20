@@ -16,7 +16,7 @@ export default ({ data }) => {
 
     return (
         <Layout className="contact-page">
-            <SEO title="Contact"/>
+            <SEO title="Contact" description="Get in touch with the team to discuss how we can help with your project."/>
             <PageHeading
                 pageName="Contact us"
                 pageTitle="We would love to hear from you."

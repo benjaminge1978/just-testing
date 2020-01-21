@@ -55,7 +55,15 @@ export default () => {
         <h1 ref={el => (header = el)} className="banner-text">
           <span>We love experiences.</span>
           <span>We create them.</span>
+          <div className="rolling">
+          <span className="under-title under1">Event production</span>
+          <span className="under-title under2">Conferences</span>
+          <span className="under-title under3">Brand Activation</span>
+          <span className="under-title under4">Event Management</span>
+          <span className="under-title under5">Venue Sourcing</span>
+          </div>
         </h1>
+        
         <Img
           className="mainBanner"
           fluid={bannerImage.file.childImageSharp.fluid}

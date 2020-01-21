@@ -61,6 +61,21 @@
       outline-width: 0;
     }
   }
+
+  .under-title {
+    font-size:2rem;
+    z-index:1000;
+  }
+  span.under-title {
+    position:absolute;
+    padding-bottom:5px;
+  }
+  .rolling {
+    position: relative;
+    overflow: hidden;
+    padding:10px 0 50px;
+    top:20px;
+  }
 }
 
 @media all and (max-width: 1300px) {
@@ -96,6 +111,20 @@
         }
       }
     }
+  }
+  .under-title {
+    font-size:1.2rem!important;
+    z-index:1000;
+  }
+  span.under-title {
+    position:absolute;
+    padding-bottom:5px;
+  }
+  .rolling {
+    position: relative;
+    overflow: hidden;
+    padding:10px 0 50px;
+    top:20px;
   }
 }
 

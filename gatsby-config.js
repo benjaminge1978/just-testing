@@ -70,6 +70,12 @@ module.exports = {
         sitemap: 'https://netlify.seventa.co.uk/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://netlify.seventa.co.uk`,
+      },
+    },
   ],
 }

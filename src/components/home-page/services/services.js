@@ -13,10 +13,10 @@ export default () => (
   <div className="services-section">
     <Fade bottom cascade distance="70px">
       <div className="services-heading">
-        <h2>Services</h2>
+        <h2>What we do</h2>
         <div className="experience">
           <span className="experience__years">
-            7 years of
+          A team with
             <br /> experience
           </span>
           <span className="experience__dash">————</span>

@@ -70,7 +70,7 @@ const Case = props => {
           offset={30}
           triggerElement={`.cases-item--${index + 1}`}
         >
-          <Tween staggerFrom={{ y: 90, opacity: 0, ease: Power4.easeOut }}>
+          <Tween staggerFrom={{ y: 30, opacity: 0, ease: Power4.easeOut }}>
             <div className="cases-item__heading">
               <span className="case-heading-arrow">
                 <Arrow />

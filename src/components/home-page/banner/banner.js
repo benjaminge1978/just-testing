@@ -58,9 +58,9 @@ export default () => {
           <div className="rolling">
           <span className="under-title under1">Event production</span>
           <span className="under-title under2">Conferences</span>
-          <span className="under-title under3">Brand Activation</span>
-          <span className="under-title under4">Event Management</span>
-          <span className="under-title under5">Venue Sourcing</span>
+          <span className="under-title under3">Brand activation</span>
+          <span className="under-title under4">Event management</span>
+          <span className="under-title under5">Venue sourcing</span>
           </div>
         </h1>
         

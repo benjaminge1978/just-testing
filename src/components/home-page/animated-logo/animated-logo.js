@@ -52,11 +52,20 @@ export default class extends React.Component {
                 ease:Power3.easeOut
             },("-=0.9")
         )
+        .from(
+            ".mainBanner img",
+            {
+                duration: 1,
+                scale: 1.1,
+                transformOrigin: "center",
+                ease:Power3.easeOut
+            },("-=0.7")
+        )
             .from("iframe",
             { 
                 opacity:0,
                 duration:1,
-            }
+            },("-=0.7")
             )
             .fromTo(".under1",
             { 

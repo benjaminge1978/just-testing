@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React, { useRef, useEffect } from "react"
-import { gsap, TimelineLite, TweenMax, Power3 } from "gsap"
+import { gsap, TimelineLite, TweenMax, Back, Power3 } from "gsap"
 import SplitText from "../../../../gsap/SplitText"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -16,19 +16,19 @@ export default () => {
 
   useEffect(() => {
     let mySplitText = new SplitText(header, {
-      type: "words",
+      type: "chars",
     })
-    let words = mySplitText.words
+    let chars = mySplitText.chars
 
     // Remove Initial flash
     TweenMax.to(app, 0, { css: { visibility: "visible" } })
 
     // Header Animation
     tl.staggerFrom(
-      words,
+      chars,
       1,
-      { opacity: 0, y: 200, ease: Power3.easeOut },
-      0.09,
+      { opacity: 0, transformOrigin:"0% 50% -50",rotationX:180 ,y: 200, ease:Back.easeOut },
+      0.02,
       "=1.2"
     )
   }, [])

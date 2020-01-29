@@ -1,6 +1,12 @@
+.site-header-wrapper {
+    position: relative;
+    height:120px;
+    width: 100vw;
+}
+
 header.site-header {
-    position: sticky;
-    padding: 40px;
+    position: relative;
+    padding: 40px 40px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;

@@ -20,11 +20,13 @@ export default () => {
     });
 
     return (
+        <main className="site-header-wrapper">
         <header id="site-header" className="site-header">
             <div className="site-header-brand">
                 <SiteBrand />
             </div>
             <HeaderMenu />
         </header>
+        </main>
     )
 }

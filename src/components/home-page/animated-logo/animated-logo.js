@@ -1,7 +1,8 @@
 import React, {Fragment} from "react";
 import gsap from "gsap";
-import { TimelineMax, Power3 } from "gsap/all";
+import { TimelineMax, Power3, Back } from "gsap/all";
 import SeventaEvents from "../banner/images/seventa-events";
+import SeventaLogoEvents from "../../home-page/banner/images/seventaLogoEvents"
 
 import "./animated-logo.scss";
 
@@ -23,16 +24,24 @@ export default class extends React.Component {
 
     componentDidMount() {
         this._timelineMax
-        .to(
-            ".sev-overlay-inner",
-            {
-                delay:0.5,
-                duration: 2,
-                scaleY: 0,
-                transformOrigin: "top left",
-                ease:Power3.easeOut
-            }
+        
+
+        .staggerFromTo(
+            ".sev-ev-anim .st0",
+               0.7, { opacity:0, transformOrigin:"0% 50% -50",rotationX:180,y: 600, ease:Power3.easeOut },
+               { opacity: 1, y: 0 },
+                0.04,
+                "0.2"
         )
+
+        .staggerTo(
+            ".sev-ev-anim",
+               1, 
+               { opacity: 0, y: -100,ease:Power3.easeIn },
+                0.02,
+                "=0.1"
+        )
+
         .to(
             ".mask-block",
             {
@@ -40,7 +49,7 @@ export default class extends React.Component {
                 scaleY: 0,
                 transformOrigin: "top left",
                 ease:Power3.easeOut
-            },("-=0.7")
+            },("-=0.5")
         )
         .to(
             ".seventa-events",
@@ -50,22 +59,22 @@ export default class extends React.Component {
                 opacity:0,
                 y:-10,
                 ease:Power3.easeOut
-            },("-=0.9")
+            },("-=0")
         )
         .from(
             ".mainBanner img",
             {
                 duration: 1,
-                scale: 1.1,
+                scale: 1.5,
                 transformOrigin: "center",
                 ease:Power3.easeOut
-            },("-=0.7")
+            },("-=1")
         )
             .from("iframe",
             { 
                 opacity:0,
                 duration:1,
-            },("-=0.7")
+            },("-=0.3")
             )
             .fromTo(".under1",
             { 
@@ -185,10 +194,9 @@ export default class extends React.Component {
             this.state.showed
                 ? null
                 :   <Fragment>
-                    <div className="sev-overlay">
-                    <SeventaEvents className="seventa-loader" /> 
-                    <div className="sev-overlay-inner"></div>
-                    </div>  
+                    <div className="sev-ev-anim">
+                    <SeventaLogoEvents />
+                        </div>  
                         <div className="mask-block" ref={this.masBlockRef}/>
                     </Fragment>
         );

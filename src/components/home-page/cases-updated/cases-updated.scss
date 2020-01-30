@@ -100,8 +100,8 @@
       }
 
       &__heading {
-        display: flex;
-        align-items: flex-end;
+        display: grid;
+        grid-template-columns: 1fr 50fr;
         margin-top: 1.3rem;
 
         svg {

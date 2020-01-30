@@ -16,8 +16,8 @@
     }
 
     .case-category-item-desc {
-      display: flex;
-      align-items: flex-end;
+      display: grid;
+      grid-template-columns: 1fr 11fr;
       margin: 25px 0 50px 0;
 
       svg {
@@ -40,6 +40,7 @@
           margin-bottom: .5rem;
           font-size: 1rem;
           color: #717171;
+          position: relative;
 
           &:first-letter {
             text-transform: uppercase;

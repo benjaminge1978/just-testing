@@ -25,6 +25,8 @@ export default class extends React.Component {
     componentDidMount() {
         this._timelineMax
         
+        .set(".sev-ev-anim", {autoAlpha:0})
+        .set(".sev-ev-anim", {autoAlpha:1})
 
         .staggerFromTo(
             ".sev-ev-anim .st0",

@@ -648,7 +648,7 @@ a {
 }
 
 .animated-img:hover img {
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 ::-ms-input-placeholder, :-ms-input-placeholder, ::placeholder {
@@ -675,4 +675,9 @@ a.animated-link:after {
 
 a.animated-link:hover:after {
   width: 100%;
+}
+
+p a {
+  text-decoration: underline;
+  color: #000;
 }

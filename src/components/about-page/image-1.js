@@ -25,7 +25,7 @@ export default () => {
             fluid={imageQuery.file.childImageSharp.fluid}
             alt={imageQuery.file.name}
             loading="lazy"
-            className="animated-img"
+            className=""
         />
     );
 };

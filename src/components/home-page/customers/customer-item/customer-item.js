@@ -9,7 +9,7 @@ const CustomerItem = ({ logo }) => (
             alt={logo.title}
             objectFit="contain"
             objectPosition="0% 0%"
-            className="animated-img"
+            className=""
         />
     </div>
 );

@@ -182,7 +182,8 @@
 
   .cases-updated-list {
     .animated-img.gatsby-image-wrapper {
-      height: 100%;
+      height: 240px;
+      object-fit: cover;
     }
     .cases-item__thumb {
       height: 250px;

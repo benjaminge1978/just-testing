@@ -20,7 +20,7 @@ export default ({ data }) => {
         pageTitle="Take a look at some of work"
         description="At Seventa we take pride in knowing our customers. Completely leverage existing real-time information. Dramatically orchestrate web-enabled mosql."
       >
-        <ul className="case-studies-heading-links">
+        {/* <ul className="case-studies-heading-links">
           <li>
             <AniLink cover to="/brand-activation" direction="up" bg="#FFFFFF">
               Brand activation
@@ -46,7 +46,7 @@ export default ({ data }) => {
               Venue sourcing
             </AniLink>
           </li>
-        </ul>
+        </ul> */}
       </PageHeading>
       {categories ? (
         <ContainerLabelled label={<Arrow />} className="case-studies-section">

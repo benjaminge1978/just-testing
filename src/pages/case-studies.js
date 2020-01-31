@@ -17,10 +17,10 @@ export default ({ data }) => {
       <SEO title="Case Studies" description="Seventa events portfolio. See some of our event work" />
       <PageHeading
         pageName="Case Studies"
-        pageTitle="Take a look at some of work"
-        description="At Seventa we take pride in knowing our customers. Completely leverage existing real-time information. Dramatically orchestrate web-enabled mosql."
+        pageTitle="Here’s an insight into our world of events."
+        description="We’re extremely proud of our client relationships and we love creating unforgettable experiences and events. Our portfolio of work ranges from global brands to private clients and corporate companies. Take a look… "
       >
-        {/* <ul className="case-studies-heading-links">
+        <ul className="case-studies-heading-links">
           <li>
             <AniLink cover to="/brand-activation" direction="up" bg="#FFFFFF">
               Brand activation
@@ -46,7 +46,7 @@ export default ({ data }) => {
               Venue sourcing
             </AniLink>
           </li>
-        </ul> */}
+        </ul>
       </PageHeading>
       {categories ? (
         <ContainerLabelled label={<Arrow />} className="case-studies-section">

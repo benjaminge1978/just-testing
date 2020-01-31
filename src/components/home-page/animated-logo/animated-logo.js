@@ -79,17 +79,16 @@ export default class extends React.Component {
             },("-=0.3")
             )
             .fromTo(".under1",
-            { 
+            {   delay:4,
                 y:70,
                 opacity:1,
-                duration:1,
-            },
+            }, 
             { 
                 delay:1,
                 opacity:1,
                 y:-0,
                 duration:1,
-            }, ("-=2")
+            }, ("+=2")
             )
             .to(
                 ".under1",

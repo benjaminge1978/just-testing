@@ -23,7 +23,7 @@ export default ({ data }) => {
         <ul className="case-studies-heading-links">
           <li>
             <AniLink cover to="/brand-activation" direction="up" bg="#FFFFFF">
-              Brand activation
+              Brand activations
             </AniLink>
           </li>
           <li>

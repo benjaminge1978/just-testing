@@ -49,7 +49,7 @@ export default () => (
               bg="#FFF"
               aria-label="brand-activation"
             >
-              Brand activation
+              Brand activations
             </AniLink>
           </h3>
           <p>

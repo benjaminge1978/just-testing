@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
       <Services />
       <ContainerLabelled
         className="customers-section"
-        label={<span className="section-label">Customers </span>}
+        label={<span className="section-label">Clients </span>}
       >
         <Customers />
       </ContainerLabelled>

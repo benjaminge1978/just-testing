@@ -7,14 +7,14 @@ import './greybox.scss'
 export default () => {
     return (
         <>
-            <h3>Let's have a chat</h3>
+            <h3>Let's plan your next event</h3>
             <p className="lets-chat-desc">We’re always happy to talk through any new projects and ideas.</p>
             <div className="greybox-contact">
                 <p className="contact-info">
-                    <a href="mailto:info@seventa.co.uk">info@seventa.co.uk</a>
+                    Email us: <a href="mailto:hello@seventa.co.uk">hello@seventa.co.uk</a>
                 </p>
                 <p className="contact-info">
-                    <a href="tel:00441202237433">01202 237 433</a>
+                   Call us: <a href="tel:00441202237433">01202 237 433</a>
                 </p>
             </div>
             <div className="brand-mobile">

@@ -5,7 +5,7 @@
         border-top: 1px solid #fff;
         margin-right: 70px;
         padding-top: 25px;
-        width: 20%;
+        width: 27%;
 
         &:last-of-type {
             margin-right: 0;
@@ -22,6 +22,17 @@
     }
 }
 
+.contact-page {
+.offices-row {
+    .offices-row__item {
+        border-top: 1px solid #fff;
+        margin-right: 70px;
+        padding-top: 25px;
+        width: 29%;
+    }
+}
+}
+
 @media only screen and (max-width: 992px) {
     .offices-row {
 
@@ -29,7 +40,9 @@
             width: 50%;
         }
     }
+
 }
+
 
 @media only screen and (max-width: 480px) {
     .offices-row {

@@ -82,15 +82,47 @@
 }
 
 @media all and (max-width: 992px) {
-  .contact-page-form-section {
+  .contact-page {
 
-    padding: 100px 75px;
+    &-darkgrey {
+
+      .container-labelled {
+
+        &__inner {
+
+          .contact-data {
+            padding: 30px 0 0 0!important;
+          }
+        }
+      }
+    }
   }
+  .contact-page-form-section {
+    padding: 100px 75px;
+    color: #FFF;
+  }
+  .contact-page-darkgrey a {
+    color: #FFF;
+    font-size: 20px;
+}
+.contact-page .offices-row .offices-row__item {
+  border-top: 1px solid #FFF;
+  width: 100%;
+  color: #FFF;
+}
+.contact-page .container-labelled__inner {
+  background-color: #333;
+  padding: 30px 30px !important;
+}
 }
 
 @media all and (max-width: 576px) {
   .contact-page-form-section {
-
-    padding: 100px 50px;
+    background: #FFF;
+    padding: 0;
   }
+  .contact-page-form-section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
 }

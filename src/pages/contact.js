@@ -31,7 +31,7 @@ export default ({ data }) => {
                     <Img fluid={childImageSharp.fluid} alt={name} loading="lazy" className="animated-img" />
                 </figure>
                 <div className="contact-data">
-                    <h3><a href="mailto:info@seventa.co.uk">E: info@seventa.co.uk</a></h3>
+                    <h3><a href="mailto:hello@seventa.co.uk">E: hello@seventa.co.uk</a></h3>
                     <h3><a href="tel:00441202237433">T: 01202 237 433</a></h3>
                     <OfficeLocation />
                 </div>

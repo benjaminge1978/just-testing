@@ -13,7 +13,7 @@ module.exports = {
     title: `Seventa Events`,
     description: `We create memorable, rewarding and engaging experiences for our clients’ events.`,
     author: `@milkisnice1`,
-    contactEmail: `info@seventa.co.uk`,
+    contactEmail: `hello@seventa.co.uk`,
     twitterUsername: "@SeventaEvents",
     image:'/seventa-cover.jpg',
     siteUrl:'https://seventa.netlify.com',

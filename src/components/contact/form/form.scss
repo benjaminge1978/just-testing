@@ -15,12 +15,14 @@ form#contact-form {
     font-family: inherit;
     width: 100%;
     margin-bottom:30px;
+    background: transparent;
   }
 
   input {
     border: 1px solid transparent;
     border-bottom-color: #313131;
     padding: 10px 0;
+    background: transparent;
 
     &:focus {
       outline: none;
@@ -41,8 +43,9 @@ form#contact-form {
   }
 
   textarea {
+    
     margin-top: 2rem;
-    border: 1px solid #313131;
+    border-bottom: 1px solid #313131;
     padding: 15px;
   }
 
@@ -64,4 +67,25 @@ form#contact-form {
       outline: none;
     }
   }
+}
+@media all and (max-width: 992px) {
+input, textarea {
+  color:#FFF;
+}
+input, textarea {
+  color: #FFF;
+}
+
+input {
+  color:#FFF;
+}
+form#contact-form input, textarea {
+  border-bottom-color: #FFF;
+}
+form#contact-form textarea {
+  border-bottom: 1px solid #FFF!important;
+}
+form#contact-form button {
+  text-decoration: underline;
+}
 }

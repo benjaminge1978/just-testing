@@ -28,7 +28,7 @@ export default ({ data }) => {
                 label={<Arrow aria-hidden={true} />}
             >
                 <figure>
-                    <Img fluid={childImageSharp.fluid} alt={name} loading="lazy" className="animated-img" />
+                    <Img fluid={childImageSharp.fluid} alt={name} loading="lazy" className="" />
                 </figure>
                 <div className="contact-data">
                     <h3><a href="mailto:hello@seventa.co.uk">E: hello@seventa.co.uk</a></h3>
@@ -46,7 +46,7 @@ export default ({ data }) => {
 
 export const query = graphql`
     query ContactPageImage {
-        file(relativePath: {eq: "seventa-about-us-header-image.jpg"}) {
+        file(relativePath: {eq: "seventa-contact-header.jpg"}) {
             publicURL
             name
             childImageSharp {

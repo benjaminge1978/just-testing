@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 export default () => {
     const promoImageQuery = useStaticQuery(graphql`
         query PromoImage {
-            file(relativePath: {eq: "seventa-about-us-header-image.jpg"}) {
+            file(relativePath: {eq: "seventa-about-paint.jpg"}) {
                 childImageSharp {
                     fluid(quality: 90) {
                         ...GatsbyImageSharpFluid_withWebp

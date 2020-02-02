@@ -149,7 +149,6 @@
         a {
           display: block;
           color: inherit;
-          text-decoration: underline;
         }
   
         &:last-of-type {
@@ -193,9 +192,10 @@
       }
     }
   }
-
-
-
 }
 
+.case-studies-heading-links li a {
+  text-decoration: none!important;
+      border-bottom: 2px solid #333!important;
+}
 

@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 export default ({ setRef }) => {
     const file = useStaticQuery(graphql`
         {
-            file(relativePath: {eq: "seventa-logo-events.svg"}) {
+            file(relativePath: {eq: "seventa-logo-events-white.svg"}) {
                 publicURL
                 name
             }

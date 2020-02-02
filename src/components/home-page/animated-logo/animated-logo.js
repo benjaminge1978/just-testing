@@ -1,7 +1,6 @@
 import React, {Fragment} from "react";
 import gsap from "gsap";
 import { TimelineMax, Power3, Back } from "gsap/all";
-import SeventaEvents from "../banner/images/seventa-events";
 import SeventaLogoEvents from "../../home-page/banner/images/seventaLogoEvents"
 
 import "./animated-logo.scss";
@@ -39,7 +38,7 @@ export default class extends React.Component {
         .staggerTo(
             ".sev-ev-anim",
                1, 
-               { opacity: 0, y: -100,ease:Power3.easeIn },
+               {opacity: 0, y: -100,ease:Power3.easeIn },
                 0.02,
                 "=0.1"
         )

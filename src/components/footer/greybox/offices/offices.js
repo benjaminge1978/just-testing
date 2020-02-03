@@ -7,7 +7,7 @@ export default () => {
         {
             location: 'Bournemouth',
             addresse: [
-                'Seventa Events, Unit N, Lion Works Estate,',
+                'Unit N, Lion Works Estate,',
                 '543 Wallisdown Rd, Bournemouth, BH12 5AD'
             ],
         },

@@ -22,9 +22,9 @@ export default ({ data }) => {
             <SEO title="About us" description="We are a mighty team, specialising in events"/>
             <PageHeading
                 pageName="Welcome to Seventa Events!"
-                pageTitle="A mighty team, specialising in all things events."
-                description="Founded in 2011 by Simon Brooks, Seventa was built from a drive of enthusiasm for the industry of likeminded people, out of a garden shed. Seventa now have hubs in London and Bournemouth respectively. 
-                "
+                pageTitle="A highly skilled team, specialising in all things events."
+                description="Founded in 2011 by Simon Brooks, we were built from a drive of enthusiasm for the industry, the desire to create a talented group of event managers that create, deliver and excite for our clients. 
+                Like a number of success stories, we started out of a garden shed. We now have hubs in London and Bournemouth respectively."
             />
             <ContainerLabelled label={<Arrow />} className="about-page-promo" innerClassName="about-page-promo__inner" labelClassName="about-page-promo__label">
                 <PromoImage />
@@ -44,7 +44,7 @@ export default ({ data }) => {
                 </div>
             </div>
             <ContainerLabelled className="about-page-text about-page-text--grey" innerClassName="light-bg">
-                <p className="light-text">From Humble begginings</p>
+                <p className="light-text">From Humble beginnings</p>
                 <h2>You’ll be pleased to hear that we’ve moved on from the shed…</h2>
                 <LongDashText>
                     <p>Our offices are now conjoined to a 26,000 ft square warehouse stocked floor to ceiling with event hire equipment provided by our sister company Innovative Hire. 

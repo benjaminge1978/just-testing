@@ -10,7 +10,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Seventa Events`,
+    title: `Event Planning & Management Agency`,
     description: `We create memorable, rewarding and engaging experiences for our clients’ events.`,
     author: `@milkisnice1`,
     contactEmail: `hello@seventa.co.uk`,

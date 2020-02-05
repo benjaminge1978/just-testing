@@ -13,7 +13,7 @@ import Services from "../components/home-page/services/services"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Seventa Events" description="Creating unforgettable experiences and events. Brand activation. Conferences. Event production. Event management. Venue sourcing" />
+      <SEO title="Seventa Events" description="Brand activation. Conferences. Event production. Event management. Venue sourcing" />
       <AnimatedLogo />
       <Banner />
       <Promo />

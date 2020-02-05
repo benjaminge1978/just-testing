@@ -19,7 +19,7 @@ export default ({ data }) => {
 
     return (
         <Layout className="about-page-layout">
-            <SEO title="About us" description="We are a mighty team, specialising in events"/>
+            <SEO title="About Seventa Events" description="We are a mighty team, specialising in events"/>
             <PageHeading
                 pageName="Welcome to Seventa Events!"
                 pageTitle="A highly skilled team, specialising in all things events."

@@ -27,7 +27,13 @@ export default () => {
     tl.staggerFrom(
       chars,
       1,
-      { opacity: 0, transformOrigin:"0% 50% -50",rotationX:180 ,y: 200, ease:Back.easeOut },
+      {
+        opacity: 0,
+        transformOrigin: "0% 50% -50",
+        rotationX: 180,
+        y: 200,
+        ease: Back.easeOut,
+      },
       0.02,
       "=1.2"
     )
@@ -49,6 +55,7 @@ export default () => {
   return (
     <div className="banner-section" ref={el => (app = el)}>
       <div className="banner-section__left">
+        <span>Unforgettable experiences & Events</span>
         <Arrow />
       </div>
       <div className="banner-section__inner">
@@ -63,7 +70,7 @@ export default () => {
           <span className="under-title under5">Venue sourcing</span>
           </div> */}
         </h1>
-        
+
         <Img
           className="mainBanner"
           fluid={bannerImage.file.childImageSharp.fluid}

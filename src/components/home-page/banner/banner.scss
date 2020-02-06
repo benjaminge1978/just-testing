@@ -10,6 +10,28 @@
     width: 175px;
     min-width: 175px;
 
+    span {
+      font-size: 16px;
+      transform: rotate(90deg);
+      position: absolute;
+      height: 145px;
+      display: block;
+      bottom: 565px;
+      left: 57%;
+      width: max-content;
+      transform-origin: 0 0;
+      &::after {
+        background-color: #414141;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        left: 10px;
+        vertical-align: middle;
+        width: 50px;
+      }
+    }
+
     svg {
       position: absolute;
       width: auto;
@@ -63,18 +85,18 @@
   }
 
   .under-title {
-    font-size:2rem;
-    z-index:1000;
+    font-size: 2rem;
+    z-index: 1000;
   }
   span.under-title {
-    position:absolute;
-    padding-bottom:5px;
+    position: absolute;
+    padding-bottom: 5px;
   }
   .rolling {
     position: relative;
     overflow: hidden;
-    padding:10px 0 50px;
-    top:20px;
+    padding: 10px 0 50px;
+    top: 20px;
   }
 }
 
@@ -85,6 +107,12 @@
     &__left {
       width: 100px;
       min-width: 100px;
+
+      span {
+        height: 185px;
+        bottom: 565px;
+        left: 65%;
+      }
     }
 
     &__inner {
@@ -113,18 +141,18 @@
     }
   }
   .under-title {
-    font-size:1.2rem!important;
-    z-index:1000;
+    font-size: 1.2rem !important;
+    z-index: 1000;
   }
   span.under-title {
-    position:absolute;
-    padding-bottom:5px;
+    position: absolute;
+    padding-bottom: 5px;
   }
   .rolling {
     position: relative;
     overflow: hidden;
-    padding:10px 0 50px;
-    top:20px;
+    padding: 10px 0 50px;
+    top: 20px;
   }
 }
 

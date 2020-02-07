@@ -29,7 +29,7 @@ export default () => (
         <Menu
           id="footer-menu"
           links={[
-            { href: "policy", text: "Privacy Policy & T&C's" },
+            { href: "privacy-policy", text: "Privacy Policy & T&C's" },
             { href: "csr", text: "CSR" },
             { href: "cookie-policy", text: "Cookie Policy" },
             {

@@ -55,7 +55,7 @@ export default () => {
   return (
     <div className="banner-section" ref={el => (app = el)}>
       <div className="banner-section__left">
-        <span>Unforgettable experiences & Events</span>
+        <span>Unforgettable experiences & events</span>
         <Arrow />
       </div>
       <div className="banner-section__inner">

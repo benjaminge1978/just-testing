@@ -7,7 +7,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-
 module.exports = {
   siteMetadata: {
     title: `Event Planning & Management Agency`,
@@ -15,8 +14,8 @@ module.exports = {
     author: `@milkisnice1`,
     contactEmail: `hello@seventa.co.uk`,
     twitterUsername: "@SeventaEvents",
-    image:'/seventa-cover.jpg',
-    siteUrl:'https://seventa.netlify.com',
+    image: "/seventa-cover.jpg",
+    siteUrl: "https://seventa.netlify.com",
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -41,7 +40,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: "UA-107505363-1",
+          // Setting this parameter is optional
+          anonymize: true,
+        },
+        facebookPixel: {
+          pixelId: "810638596071143",
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ["production", "development"],
+      },
+    },
+    "gatsby-plugin-offline",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,27 +64,27 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ['Lexend Deca'],
-          display: 'swap'
-        }
-      }
+          families: ["Lexend Deca"],
+          display: "swap",
+        },
+      },
     },
     `@contentful/gatsby-transformer-contentful-richtext`,
     `gatsby-plugin-react-svg`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-sharp`, 
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://seventa.netlify.com',
-        sitemap: 'https://seventa.netlify.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        host: "https://seventa.netlify.com",
+        sitemap: "https://seventa.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,

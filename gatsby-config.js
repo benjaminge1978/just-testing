@@ -91,6 +91,7 @@ module.exports = {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://seventa.netlify.com`,
+        stripQueryString: true,
       },
     },
   ],

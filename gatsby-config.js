@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-offline',
       options: {
-          navigateFallbackWhitelist: [/^.*(?!\.\w?$)/],
+          navigateFallbackWhitelist: [/\/$/],
       }
   },
     

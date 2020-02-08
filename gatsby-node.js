@@ -1,11 +1,23 @@
-const path = require("path")
+const path = require("path");
+
+const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``));
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+
+  const oldPage = Object.assign({}, page);
+  page.path = replacePath(page.path);
+  if (page.path !== oldPage.path) {
+    deletePage(oldPage);
+    createPage(page);
+  }
+};
 
 exports.onCreateWebpackConfig = ({
   stage,
   rules,
   loaders,
   plugins,
-  actions,
+  actions
 }) => {
   actions.setWebpackConfig({
     module: {
@@ -14,14 +26,14 @@ exports.onCreateWebpackConfig = ({
           ? [
               {
                 test: /ScrollMagic/,
-                use: loaders.null(),
+                use: loaders.null()
               },
               {
                 test: /scrollmagic-plugin-gsap/,
-                use: loaders.null(),
-              },
+                use: loaders.null()
+              }
             ]
-          : [],
+          : []
     },
     resolve: {
       alias: {
@@ -52,11 +64,11 @@ exports.onCreateWebpackConfig = ({
         "debug.addIndicators": path.resolve(
           "node_modules",
           "scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"
-        ),
-      },
-    },
-  })
-}
+        )
+      }
+    }
+  });
+};
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const pagesSlugs = await graphql(`
@@ -83,16 +95,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `)
+  `);
 
   if (pagesSlugs.errors) {
-    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
+    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
   }
 
-  const { createPage } = actions
-  const postsPerPage = 6
-  const posts = pagesSlugs.data.allContentfulPost.nodes
-  const pagesCount = Math.ceil(posts.length / postsPerPage)
+  const { createPage } = actions;
+  const postsPerPage = 6;
+  const posts = pagesSlugs.data.allContentfulPost.nodes;
+  const pagesCount = Math.ceil(posts.length / postsPerPage);
 
   for (let i = 0; i < pagesCount; i++) {
     createPage({
@@ -102,9 +114,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         limit: postsPerPage,
         skip: i * postsPerPage,
         pagesCount,
-        currPage: i + 1,
-      },
-    })
+        currPage: i + 1
+      }
+    });
   }
 
   posts.forEach((node, index) => {
@@ -118,10 +130,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         nextPost:
           index !== posts.length - 1 && posts[index + 1]
             ? posts[index + 1].slug
-            : null,
-      },
-    })
-  })
+            : null
+      }
+    });
+  });
 
   pagesSlugs.data.allContentfulCaseCategory.nodes.forEach(node => {
     createPage({
@@ -130,10 +142,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         `./src/components/case-category/case-category.js`
       ),
       context: {
-        id: node.id,
-      },
-    })
-  })
+        id: node.id
+      }
+    });
+  });
 
   pagesSlugs.data.allContentfulCases.nodes.forEach(node => {
     createPage({
@@ -141,8 +153,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       component: path.resolve(`./src/components/case-page/case-page.js`),
       context: {
         id: node.id,
-        categoryID: node.caseCategories[0].id,
-      },
-    })
-  })
-}
+        categoryID: node.caseCategories[0].id
+      }
+    });
+  });
+};

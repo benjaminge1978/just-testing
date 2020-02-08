@@ -77,6 +77,7 @@ module.exports = {
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-force-trailing-slashes`,
     `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-robots-txt",

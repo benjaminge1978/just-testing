@@ -24,7 +24,7 @@ const CookieNotice = () => {
           By using our website you consent to all cookies in accordance with our
           Cookie Policy.
         </div>
-        <AniLink className="read-more" to="/policy">
+        <AniLink className="read-more" to="/privacy-policy">
           Read More
         </AniLink>
       </CookieConsent>

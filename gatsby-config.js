@@ -55,7 +55,13 @@ module.exports = {
         environments: ["production", "development"],
       },
     },
-    "gatsby-plugin-offline",
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+          navigateFallbackWhitelist: [/^.*(?!\.\w?$)/],
+      }
+  },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
       <Promo />
       <ContainerLabelled
         className="cases-updated-section"
-        label={<span className="section-label">Cases </span>}
+        label={<span className="section-label">Case studies </span>}
       >
         <CasesUpdated data={data} />
       </ContainerLabelled>

@@ -8,6 +8,7 @@ export default ({ data }) => {
 
     return (
         <div className="cases-updated-list">
+            <div className="bg-block"></div>
             {
                 cases.map((item, index) => {
                     const { category, title, slug, image } = item.node;

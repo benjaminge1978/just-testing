@@ -5,6 +5,7 @@
     .section-label {
         display: block;
         transform: rotate(90deg) translate(44%, -10%);
+        font-size: 14px;
         &::after {
             background-color: #000;
             content: "";

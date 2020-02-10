@@ -16,12 +16,12 @@
       position: absolute;
       height: 145px;
       display: block;
-      bottom: 55%;
+      bottom: 50%;
       left: 57%;
       width: max-content;
       transform-origin: 0 0;
       &::after {
-        background-color: #414141;
+        // background-color: #414141;
         content: "";
         display: inline-block;
         height: 1px;

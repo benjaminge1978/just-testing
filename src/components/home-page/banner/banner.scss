@@ -3,12 +3,12 @@
   display: flex;
   height: calc(100vh - 124px);
   min-height: 750px;
-  background: linear-gradient(to top, #efefef 0%, #efefef 250px, white 250px);
+  //background: linear-gradient(to top, #efefef 0%, #efefef 250px, white 250px);
 
   &__left {
     position: relative;
-    width: 175px;
-    min-width: 175px;
+    width: 145px;
+    min-width: 145px;
 
     span {
       font-size: 14px;
@@ -37,7 +37,7 @@
       width: auto;
       height: 50px;
       display: block;
-      bottom: 95px;
+      bottom: 65px;
       left: 45%;
     }
   }

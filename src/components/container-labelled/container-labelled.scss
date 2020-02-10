@@ -2,11 +2,11 @@
   display: flex;
 
   &__label {
-    width: 175px;
+    width: 145px;
   }
 
   &__inner {
-    width: calc(100% - 175px);
+    width: calc(100% - 145px);
   }
 }
 

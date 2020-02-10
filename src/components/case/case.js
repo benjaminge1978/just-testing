@@ -67,10 +67,10 @@ const Case = props => {
         <Scene
           reverse={false}
           duration={500}
-          offset={30}
+          offset={0}
           triggerElement={`.cases-item--${index + 1}`}
         >
-          <Tween staggerFrom={{ y: 30, opacity: 0, ease: Power4.easeOut }}>
+          <Tween staggerFrom={{ 7: 300, opacity: 1, ease: Power4.easeOut }}>
             <div className="cases-item__heading">
               <span className="case-heading-arrow">
                 <Arrow />

@@ -6,7 +6,7 @@
     color: #fff;
 
     .container-labelled__label {
-        flex-basis: 175px;
+        flex-basis: 145px;
         position: relative;
 
         .greybox-lets-talk {
@@ -14,7 +14,7 @@
             font-size: 0.9rem;
             position: absolute;
             top: 0;
-            left: 15%;
+        left: 10%;
             transform: rotate(90deg) translateX(36%);
             white-space: nowrap;
             &::after {

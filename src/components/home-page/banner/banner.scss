@@ -16,7 +16,7 @@
       position: absolute;
       height: 145px;
       display: block;
-      bottom: 535px;
+      bottom: 55%;
       left: 57%;
       width: max-content;
       transform-origin: 0 0;
@@ -102,11 +102,15 @@
 
 @media all and (max-width: 1300px) {
   .banner-section {
-    // min-height: 0px;
+    min-height: 0px;
 
     &__left {
       width: 100px;
       min-width: 100px;
+
+      svg {
+        display: none;
+      }
 
       span {
         height: 100px;

@@ -43,13 +43,6 @@ footer.site-footer {
 
 span.social-links__text{
     &::after {
-        background-color: #9a9a9a;
-        content: "";
-        display: inline-block;
-        height: 1px;
-        position: relative;
-        left: 5px;
-        vertical-align: middle;
         width: 50px;
     }
 }

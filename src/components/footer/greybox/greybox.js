@@ -10,18 +10,25 @@ export default () => {
             <h3>Let's plan your next event</h3>
             <p className="lets-chat-desc">We’re always happy to talk through any new projects and ideas.</p>
             <div className="greybox-contact">
+                <div className="grey-box-col">
+                    <h4>Contact Us</h4>
                 <p className="contact-info">
                     Email us: <a href="mailto:hello@seventa.co.uk">hello@seventa.co.uk</a>
                 </p>
+                
                 <p className="contact-info">
                    Call us: <a href="tel:00441202237433">01202 237 433</a>
                 </p>
-            </div>
+                </div>
+            
             <div className="brand-mobile">
                 <SiteBrand />
             </div>
+            <div className="grey-box-col">
             <div className="footer-greybox__offices">
                 <OfficeLocation />
+                </div>
+            </div>
             </div>
         </>
     )

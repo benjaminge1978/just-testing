@@ -1,17 +1,19 @@
 .promo-section {
-    padding: 200px 100px;
+    padding: 200px 300px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: #EFEFEF;
 
     &__inner {
-        max-width: 768px;
+        max-width: 1400px;
         margin-right: 100px;
+        display: flex;
 
         h3 {
-            font-size: 2.7rem;
-            line-height: 3.4rem;
+            font-size: 2rem;
+            line-height: 2.4rem;
             font-weight: 400;
+            max-width: 600px;
         }
 
         p {
@@ -28,25 +30,39 @@
 
 @media all and (max-width: 1920px) {
     .promo-section {
-        padding: 150px 0px;
+        padding: 150px 180px 130px;
         &__inner {
             margin-left: 100px;
-
+            
             h3 {
-                font-size: 50px;
+                font-size: 2rem;
+                min-width: 500px;
             }
         }
     }
 }
 
-@media all and (max-width: 992px) {
+@media all and (max-width: 1365px) {
     .promo-section {
-
+        padding: 90px 0px 60px 100px;
         &__inner {
             margin-left: 100px;
-
+            display: block;
             h3 {
-                font-size: 50px;
+              
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 992px) {
+    .promo-section {
+        padding: 90px 0px;
+        &__inner {
+            margin-left: 100px;
+            h3 {
+                
             }
         }
     }
@@ -54,7 +70,7 @@
 
 @media all and (max-width: 768px) {
     .promo-section {
-        padding-top: 100px;
+        padding-top: 0px;
         padding-bottom: 50px;
 
         &__inner {
@@ -64,11 +80,13 @@
             h3 {
                 font-size: 34px;
                 line-height: 1.4;
+                min-width: 100px;
             }
 
             p {
                 font-size: 16px;
                 line-height: 28px;
+                max-width:400px;
             }
         }
     }

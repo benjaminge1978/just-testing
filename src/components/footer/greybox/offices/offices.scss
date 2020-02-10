@@ -2,10 +2,9 @@
     display: flex;
 
     .offices-row__item {
-        border-top: 1px solid #fff;
+       border-top:0px;
         margin-right: 70px;
-        padding-top: 25px;
-        width: 27%;
+
 
         &:last-of-type {
             margin-right: 0;
@@ -27,8 +26,7 @@
     .offices-row__item {
         border-top: 1px solid #fff;
         margin-right: 70px;
-        padding-top: 25px;
-        width: 29%;
+        padding-top:25px;
     }
 }
 }

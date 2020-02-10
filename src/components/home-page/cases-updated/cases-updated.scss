@@ -166,6 +166,10 @@
 }
 
 @media all and (max-width: 992px) {
+  .bg-block {
+    display: none;
+  }
+
   .cases-updated-section {
     .container-labelled__inner {
       padding: 30px;

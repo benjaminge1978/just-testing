@@ -194,8 +194,16 @@
   }
 }
 
+
 .case-studies-heading-links li a {
   text-decoration: none!important;
       border-bottom: 2px solid #333!important;
+      margin-bottom: 20px;
+}
+
+@media all and (max-width: 1600px) {
+  .case-studies-heading-links li a {
+        font-size: 0.8rem;
+  }
 }
 

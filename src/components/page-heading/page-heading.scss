@@ -1,5 +1,5 @@
 .page-heading {
-  padding: 115px 375px;
+  padding: 175px 375px;
 
   &__name {
     color: #717171;
@@ -8,21 +8,41 @@
   &__title {
     font-size: 3.2rem;
     font-weight: 400;
-    max-width:900px;
+    max-width:1200px;
     color: #323232;
+    line-height: 4rem;
   }
 
   &__description {
-    max-width: 850px;
+    max-width: 1200px;
     font-size: 1.2rem;
     line-height: 1.8rem;
   }
 }
 
-@media all and (max-width: 1400px) {
+
+@media all and (max-width: 1700px) {
   .page-heading {
-    padding-right: 300px;
-    padding-left: 300px;
+    padding: 115px 275px;
+  
+    &__name {
+      color: #717171;
+      font-size: 1rem;
+    }
+  
+    &__title {
+      font-size: 2.4rem;
+      font-weight: 400;
+      max-width:900px;
+      color: #323232;
+      line-height: 3rem;
+    }
+  
+    &__description {
+      max-width: 900px;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
   }
 }
 

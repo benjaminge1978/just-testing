@@ -72,9 +72,13 @@
   .related-cases {
     &__heading {
       padding: 20px 0px;
-
+      a {
+        font-size: 0.8rem;
+      }
       h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        margin-top: 30px;
       }
 
       p {

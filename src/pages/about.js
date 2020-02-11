@@ -44,7 +44,7 @@ export default ({ data }) => {
                 </div>
             </div>
             <ContainerLabelled className="about-page-text about-page-text--grey" innerClassName="light-bg">
-                <p className="light-text">From Humble beginnings</p>
+                <p className="light-text">From humble beginnings</p>
                 <h2>You’ll be pleased to hear that we’ve moved on from the shed…</h2>
                 <LongDashText>
                     <p>Our offices are now conjoined to a 26,000 ft square warehouse stocked floor to ceiling with event hire equipment provided by our sister company Innovative Hire. 
@@ -88,7 +88,7 @@ export const query = graphql`
                 name
                 photo {
                     title
-                    fluid(maxWidth: 1000, quality: 100) {
+                    fluid(maxWidth: 1600, quality: 100) {
                       ...GatsbyContentfulFluid_withWebp_noBase64
                     }
                 }

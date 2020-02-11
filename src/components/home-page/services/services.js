@@ -189,7 +189,7 @@ export default () => (
           </h3>
           <p>
             With established contacts at a wide range of both well-known and
-            more unique venues across the UK we have a wealth of experience
+            more unique venues across the UK, we have a wealth of experience
             finding venues to suit any event requirement.
           </p>
           <AniLink

@@ -87,15 +87,15 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://seventa.netlify.com",
-        sitemap: "https://seventa.netlify.com/sitemap.xml",
+        host: "https://seventa.co.uk",
+        sitemap: "https://seventa.co.uk/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://seventa.netlify.com`,
+        siteUrl: `https://seventa.co.uk`,
         stripQueryString: true,
       },
     },

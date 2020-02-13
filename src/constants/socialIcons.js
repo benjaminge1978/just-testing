@@ -9,14 +9,14 @@ export default [
     },
     {
         icon:<FaInstagram />,
-        url: 'https://www.facebook.com/SeventaEvents/'
+        url: 'https://www.instagram.com/seventaevents/'
     },
     {
         icon:<FaLinkedinIn />,
-        url: 'https://www.facebook.com/SeventaEvents/'
+        url: 'https://www.linkedin.com/company/seventa-events/'
     },
     {
         icon:<FaTwitter />,
-        url: 'https://www.facebook.com/SeventaEvents/'
+        url: 'https://twitter.com/SeventaEvents'
     }
 ]

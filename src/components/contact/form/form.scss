@@ -43,7 +43,8 @@ form#contact-form {
     &[type="checkbox"] {
       width:auto;
       float:left;
-      margin-right: 20px;
+      margin-right: 8px;
+      margin-top: 5px;
     }
   }
 
@@ -53,7 +54,6 @@ form#contact-form {
   }
 
   textarea {
-    
     margin-top: 1.4rem;
     border-bottom: 1px solid #313131;
     padding: 15px;
@@ -110,7 +110,18 @@ form#contact-form textarea {
 }
 form#contact-form button {
   color:#FFF;
-  
+  background-image: linear-gradient( transparent 0%, transparent calc(50% - 3px), #ccffcc calc(50% - 3px),#ccffcc 100% );
+}
+
+form {
+  padding: 15px 15px 25px 15px;
+  background: #666;
+}
+
+.consent {
+  font-size: 12px!important;
+  margin-bottom: 30px;
+  line-height: 1.3rem;
 }
 
 form#contact-form {

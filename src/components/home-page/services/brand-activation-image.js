@@ -7,7 +7,7 @@ export default () => {
         query BrandActivationImage {
             file(relativePath: {eq: "services/brand-activation.jpg"}) {
                 childImageSharp {
-                    fluid(quality: 90, maxWidth: 900) {
+                    fluid(quality: 100, maxWidth: 1000) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }

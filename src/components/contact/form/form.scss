@@ -3,7 +3,7 @@ form#contact-form {
 
   label {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -40,11 +40,21 @@ form#contact-form {
     &[type="email"] {
 
     }
+    &[type="checkbox"] {
+      width:auto;
+      float:left;
+      margin-right: 20px;
+    }
+  }
+
+  .consent {
+    font-size: 14px;
+    margin-bottom: 30px;
   }
 
   textarea {
     
-    margin-top: 2rem;
+    margin-top: 1.4rem;
     border-bottom: 1px solid #313131;
     padding: 15px;
   }
@@ -56,6 +66,15 @@ form#contact-form {
     font-family: inherit;
     font-size: 1.3rem;
     cursor: pointer;
+    box-shadow: 0 0px 0 0;
+    color: #111;
+    padding: 2px 0 1px 0;
+    text-decoration: none;
+    background-image: linear-gradient( transparent 0%, transparent calc(50% - 9px), #ccffcc calc(50% - 9px),#ccffcc 100% );
+    transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+    background-size: 100% 200%;
+    background-position: 0 0;
+    word-break: break-word;
 
     svg {
       display: inline-block;

@@ -15,7 +15,7 @@ module.exports = {
     contactEmail: `hello@seventa.co.uk`,
     twitterUsername: "@SeventaEvents",
     image: "/seventa-cover.jpg",
-    siteUrl: "https://seventa.netlify.com",
+    siteUrl: "https://seventa.com",
   },
   plugins: [
     `gatsby-plugin-sitemap`,

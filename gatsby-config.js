@@ -15,7 +15,7 @@ module.exports = {
     contactEmail: `hello@seventa.co.uk`,
     twitterUsername: "@SeventaEvents",
     image: "/seventa-cover.jpg",
-    siteUrl: "https://seventa.com",
+    siteUrl: "https://seventa.co.uk",
   },
   plugins: [
     `gatsby-plugin-sitemap`,

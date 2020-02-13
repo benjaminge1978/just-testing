@@ -95,6 +95,10 @@ input, textarea {
   color: #FFF;
 }
 
+form#contact-form button svg {
+  display: none;
+}
+
 input {
   color:#FFF;
 }
@@ -105,6 +109,10 @@ form#contact-form textarea {
   border-bottom: 1px solid #FFF!important;
 }
 form#contact-form button {
+  color:#FFF;
+}
+p a {
   text-decoration: underline;
+  color: #FFF;
 }
 }

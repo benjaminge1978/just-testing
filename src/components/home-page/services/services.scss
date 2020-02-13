@@ -60,10 +60,24 @@
                 font-weight: 400;
                 margin-bottom: .6rem;
                 font-size: 1.2rem;
+                display: inline-block;
 
                 a {
-                    color: inherit;
-                }
+                    box-shadow: 0 0px 0 0;
+                    color: #333;
+                    padding: 2px 0 1px 0;
+                    text-decoration: none;
+                    background-image: linear-gradient( transparent 0%, transparent calc(50% - 6px), #ccffcc calc(50% - 6px),#ccffcc 100% );
+                    transition: background-position 120ms ease-in-out, padding 120ms ease-in-out;
+                    background-size: 100% 200%;
+                    background-position: 0 0;
+                    word-break: break-word;
+                  }
+                  
+                  a:hover {
+                    background-image: linear-gradient( transparent 0%, transparent calc(50% - 6px), #ccffcc calc(50% - 6px), #ccffcc 100% );
+                    background-position: 0 100%;
+                  }
             }
 
             p {
@@ -73,7 +87,7 @@
             }
 
             svg {
-                display: block;
+                display: none;
                 width: 35px;
             }
 
@@ -84,6 +98,7 @@
         }
     }
 }
+
 
 @media only screen and (max-width: 1920px) {
     .services-section {
@@ -136,6 +151,10 @@
 
                 &:nth-of-type(2n) {
                     margin-right: 0;
+                }
+
+                a {
+                    color:#FFF!important;
                 }
     
                 h3 {

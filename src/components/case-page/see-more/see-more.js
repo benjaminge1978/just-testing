@@ -11,7 +11,7 @@ const SeeMore = ({cases, category}) => {
     return (
         <div className="related-cases">
             <div className="related-cases__heading">
-                <AniLink cover to={`/${category.slug}`} direction="up" bg="#FFFFFF"><Arrow />Back to {category.name.toLowerCase()} case studies</AniLink>
+                <AniLink className="animated-link" cover to={`/${category.slug}`} direction="up" bg="#FFFFFF"><Arrow />Back to {category.name.toLowerCase()} case studies</AniLink>
                 <h3>See more {category.name}</h3>
             </div>
             <div className="related-cases__list">

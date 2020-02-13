@@ -32,7 +32,7 @@ export default () => (
       </div>
       <div className="services-cards">
         <div className="services-cards__item">
-          <AniLink
+          <AniLink className
             cover
             to="/brand-activation"
             direction="up"

@@ -24,7 +24,6 @@
     grid-template-columns: repeat(12, 1fr);
 
     .bg-block {
-      padding:500px;
       background: #efefef;
       grid-column-start: 4;
     grid-column-end: 14;
@@ -61,12 +60,13 @@
         grid-column-end: 5;
         grid-row-start: 4;
         grid-row-end: 7;
+        margin-top: -191px;
         margin-bottom: 95px;
       }
 
       &--4 {
         grid-column-start: 7;
-        grid-column-end: 13;
+        grid-column-end: 12;
         grid-row-start: 5;
         grid-row-end: 10;
         margin-bottom: 95px;
@@ -126,10 +126,7 @@
           padding-left: 10px;
           transform: translateY(15px);
 
-          p,
-          h3 {
-            margin-bottom: 0;
-          }
+
 
           p {
             color: #717171;
@@ -169,6 +166,10 @@
   .bg-block {
     display: none;
   }
+
+  .cases-updated-section .cases-updated-list .cases-item--3 {
+    margin-top: 0px;
+}
 
   .cases-updated-section {
     .container-labelled__inner {

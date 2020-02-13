@@ -1,7 +1,12 @@
 .cases-item {
+  .case-heading-arrow {
+    position: relative;
+    bottom: 30%;
+    margin-top:10px;
+  }
+
   padding-bottom: 15px;
   margin-bottom: 20px;
-  perspective: 1000px;
   
 
   &--1 {
@@ -94,7 +99,7 @@
       transform: translateY(15px);
 
       p, h3 {
-        margin-bottom: 0;
+        
       }
 
       p {

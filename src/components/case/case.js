@@ -40,7 +40,7 @@ const Case = props => {
               to={{
                 opacity: 1,
                 scale: 1.2,
-                yPercent: 5,
+              
                 transformOrigin: "bottom center",
                 ease: "Power4.easeOut",
               }}

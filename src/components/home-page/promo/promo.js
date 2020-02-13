@@ -12,7 +12,7 @@ export default () => {
             <h3>Creating unforgettable experiences and events.</h3>
             <p>
               We are your best-kept secret. A highly passionate and creative
-              team, that works behind the scenes to design, plan, create and
+              team that works behind the scenes to design, plan, create and
               manage your event.
             </p>
           </div>

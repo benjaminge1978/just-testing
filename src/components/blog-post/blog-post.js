@@ -27,7 +27,12 @@ export default ({ data, pageContext }) => {
 
   return (
     <Layout className="blog-post-single">
-      <SEO title={title} description={excerpt} slug={slug} image={thumbnail} />
+      <SEO
+        title={title}
+        description={excerpt}
+        slug={slug}
+        image={thumbnail.fluid.src}
+      />
       <PageHeading
         className="blog-post-single__heading"
         pageName={`${createdAt} by ${author.name}`}

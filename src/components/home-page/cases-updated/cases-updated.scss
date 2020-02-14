@@ -160,6 +160,9 @@
     display: block;
     width: 30px;
   }
+  .bg-block {
+    left: 5%;
+  }
 }
 
 @media all and (max-width: 992px) {
@@ -231,10 +234,6 @@
   .cases-updated-list {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-
-    .bg-block {
-      display: none;
-    }
 
     .cases-item {
       padding-bottom: 15px;

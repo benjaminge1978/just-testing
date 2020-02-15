@@ -78,7 +78,7 @@
     }
   }
   .container-labelled__inner {
-    background-color: #efefef;
+    background-color: #FFF;
     padding: 60px 30px 30px 30px!important;
   }
   .testimonial-section .testimonial__heading {
@@ -90,4 +90,8 @@
   color: #9a9a9a;
   font-size: 1rem;
 }
+.about-page-promo .container-labelled__inner {
+  padding:0!important;
+}
+
 }

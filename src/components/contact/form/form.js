@@ -5,16 +5,16 @@ import "./form.scss";
 
 export default () => (
     <form method="POST" action="https://formspree.io/mvokvpdv" name="contact-from" id="contact-form">
-        <label>
+        <label> Name
             <input type="text" name="name" placeholder="Name" />
         </label>
-        <label>
+        <label>Phone
             <input type="text" name="phone" placeholder="Telephone" />
         </label>
-        <label>
+        <label> Email
             <input type="email" name="email" placeholder="Email" />
         </label>
-        <label>
+        <label> How can we help
             <textarea name="message" rows="6" placeholder="How can we help?" />
         </label>
 

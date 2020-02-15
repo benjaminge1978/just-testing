@@ -11,18 +11,19 @@ form#contact-form {
   }
 
   input, textarea {
-    font-size: 1.3rem;
+    font-size:15px;
     font-family: inherit;
     width: 100%;
-    margin-bottom:30px;
+    margin-bottom:15px;
     background: transparent;
   }
 
   input {
-    border: 1px solid transparent;
+    border: 1px solid #313131;
     border-bottom-color: #313131;
-    padding: 10px 0;
+    padding: 10px 10px;
     background: transparent;
+    font-size:15px;
 
     &:focus {
       outline: none;
@@ -54,8 +55,6 @@ form#contact-form {
   }
 
   textarea {
-    margin-top: 1.4rem;
-    border-bottom: 1px solid #313131;
     padding: 15px;
   }
 

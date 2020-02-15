@@ -38,7 +38,7 @@
 
     &__author {
       color: #9a9a9a;
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
 
@@ -79,7 +79,6 @@
   }
   .container-labelled__inner {
     background-color: #FFF;
-    padding: 60px 30px 30px 30px!important;
   }
   .testimonial-section .testimonial__heading {
     color: #9a9a9a;
@@ -92,6 +91,10 @@
 }
 .about-page-promo .container-labelled__inner {
   padding:0!important;
+}
+.testimonial-section .container-labelled__inner {
+  background-color: #efefef;
+  padding: 30px!important;
 }
 
 }

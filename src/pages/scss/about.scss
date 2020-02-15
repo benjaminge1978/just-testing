@@ -201,7 +201,7 @@
       &--grey {
 
         .container-labelled__inner {
-          padding: 75px 50px;
+          padding: 75px 30px;
         }
       }
     }
@@ -223,6 +223,7 @@
       &__item {
         width: 100%;
         margin-right: 0;
+        padding: 0 30px 30px 30px;
       }
     }
   }
@@ -277,8 +278,8 @@
     &-text {
 
       &--blue {
-        padding: 0px;
-
+        padding: 70px 20px 50px 30px;
+        background-color: #FFF;
         .container-labelled {
 
           &__inner {

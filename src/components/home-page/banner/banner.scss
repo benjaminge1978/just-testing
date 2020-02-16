@@ -4,6 +4,19 @@
   height: calc(100vh - 124px);
   min-height: 750px;
   //background: linear-gradient(to top, #efefef 0%, #efefef 250px, white 250px);
+  
+  .banner-text a {
+    color: greenyellow;
+    font-size: 24px;
+    transition:0.3s;
+}
+
+.banner-text a:hover {
+  color: #FFF;
+  font-size: 24px;
+}
+
+
 
   &__left {
     position: relative;
@@ -144,6 +157,16 @@
       }
     }
   }
+
+  .banner-text a {
+    padding-top: 20px!important;
+    color: #FFF;
+    font-size: 20px!important;
+    transition:0.3s;
+    position:relative;
+    top:20px;
+}
+
   .under-title {
     font-size: 1.2rem !important;
     z-index: 1000;

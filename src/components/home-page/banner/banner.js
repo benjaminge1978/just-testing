@@ -6,6 +6,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Arrow from "../../../images/arrow-down.svg"
 import Video from "../banner/video/video"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 
 import "./banner.scss"
 
@@ -62,6 +64,15 @@ export default () => {
         <h1 ref={el => (header = el)} className="banner-text">
           <span>We love experiences.</span>
           <span>We create them.</span>
+          <AniLink
+                    className=""
+                    cover
+                    to="case-studies"
+                    direction="up"
+                    bg="#FFFFFF"
+                    aria-label="case-study-thumb"
+                  >See our portfolio →
+                  </AniLink>
           {/* <div className="rolling">
           <span className="under-title under1">Event production</span>
           <span className="under-title under2">Conferences</span>
@@ -70,7 +81,6 @@ export default () => {
           <span className="under-title under5">Venue sourcing</span>
           </div> */}
         </h1>
-
         <Img
           className="mainBanner"
           fluid={bannerImage.file.childImageSharp.fluid}

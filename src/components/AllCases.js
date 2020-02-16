@@ -11,7 +11,7 @@ const AllCases = () => {
           title
           image {
             fluid(quality: 90, maxWidth: 1000){
-              GatsbyImageSharpFluid_withWebp
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

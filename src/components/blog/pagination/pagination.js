@@ -45,7 +45,7 @@ const Pagination = ({maxPages, current}) => {
                         <li key={index}>
                             {
                                 'number' === typeof linkText
-                                ?   <AniLink
+                                ?   <AniLink direction="up" bg="#FFFFFF"
                                        cover to={1 === linkText ? `/blog` : `/blog/${linkText}`}
                                         className={'pagination__link' + (linkText === current ? ' pagination__link--current' : '')}
                                         aria-label={`Pagination page ${linkText}`}
@@ -62,7 +62,7 @@ const Pagination = ({maxPages, current}) => {
             {
                 current === maxPages
                     ? null
-                    :   <AniLink className="pagination__arrow" to={`/blog/${current + 1}`} aria-label="Next page">
+                    :   <AniLink direction="up" bg="#FFFFFF" className="pagination__arrow" to={`/blog/${current + 1}`} aria-label="Next page">
                           <FaChevronLeft /> 
                         </AniLink>
             }

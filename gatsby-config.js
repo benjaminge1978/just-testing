@@ -48,9 +48,6 @@ module.exports = {
           // Setting this parameter is optional
           anonymize: true,
         },
-        facebookPixel: {
-          pixelId: "810638596071143",
-        },
         // Defines the environments where the tracking should be available  - default is ["production"]
         environments: ["production", "development"],
       },
@@ -73,7 +70,8 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         typekit: {
-          id: 'caj8eyu'
+          id: 'caj8eyu',
+          display: "swap",
         },
         google: {
           families: ["Lexend Deca"],

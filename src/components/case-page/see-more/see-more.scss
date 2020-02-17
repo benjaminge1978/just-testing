@@ -29,6 +29,9 @@
 
 @media all and (max-width: 1200px) {
   .related-cases {
+    &__heading {
+      padding: 200px 0 30px 20px;
+    }
     &__list {
       .case-category__item {
         .case-category-item-desc {

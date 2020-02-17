@@ -84,6 +84,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-netlify`,
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {

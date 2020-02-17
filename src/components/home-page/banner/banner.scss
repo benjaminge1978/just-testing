@@ -5,12 +5,16 @@
   min-height: 750px;
   //background: linear-gradient(to top, #efefef 0%, #efefef 250px, white 250px);
   
+h1.banner-text {
+    text-shadow: -0.01rem 0 #FFF, 0 0.01rem #FFF, 1px 0 #FFF, 0 -0.01rem #FFF;
+}
+
   .banner-text a {
     color: greenyellow;
     font-size: 24px;
     transition:0.3s;
     letter-spacing: -0rem;
-    font-family: "sofia-pro", sans-serif;
+    text-shadow: none;
 }
 
 .banner-text a:hover {
@@ -74,10 +78,8 @@
       font-size: 4rem;
       transform: translateY(-50%);
       z-index: 1;
-      font-weight: 700;
+      font-weight: 400;
       letter-spacing: -0.2rem;
-      font-family: "sofia-pro", sans-serif;
-
 
       span {
         display: block;

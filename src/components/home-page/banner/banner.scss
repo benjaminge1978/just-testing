@@ -89,12 +89,15 @@ h1.banner-text {
       z-index: 2;
       font-weight: 400;
       letter-spacing: -0.2rem;
-
+      white-space: normal;
       span {
         display: block;
-        white-space: nowrap;
         overflow: hidden;
       }
+    }
+
+   span > div {
+      display: inline-block;
     }
 
     .gatsby-image-wrapper {
@@ -153,6 +156,9 @@ h1.banner-text {
   }
 }
 
+@media all and (max-width: 912px) {
+
+
 @media all and (max-width: 768px) {
   .banner-section {
     &__left {
@@ -165,8 +171,8 @@ h1.banner-text {
       .banner-text {
         font-size: 40px;
         letter-spacing: -0.1rem;
-        span {
-          white-space: normal;
+        span > div {
+          display: inline-block;
         }
       }
     }
@@ -202,9 +208,13 @@ h1.banner-text {
 
 @media all and (max-width: 480px) {
   .banner-section {
+    span > div {
+      display: block;
+    }
     &__inner {
       .banner-text {
-        font-size: 29px;
+        font-size: 44px;
+        line-height: 1;
       }
     }
   }
@@ -214,4 +224,5 @@ h1.banner-text {
   height: 100%;
   position: absolute !important;
   width: 100vw;
+}
 }

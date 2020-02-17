@@ -88,7 +88,7 @@ export const query = graphql`
                 name
                 photo {
                     title
-                    fluid(maxWidth: 800, quality: 80) {
+                    fluid(maxWidth: 800, quality: 75) {
                       ...GatsbyContentfulFluid_withWebp_noBase64
                     }
                 }

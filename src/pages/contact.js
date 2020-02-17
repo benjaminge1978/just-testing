@@ -50,7 +50,7 @@ export const query = graphql`
             publicURL
             name
             childImageSharp {
-                fluid(maxWidth: 1500, quality: 80) {
+                fluid(maxWidth: 1500, quality: 75) {
                   ...GatsbyImageSharpFluid
                 }
             }

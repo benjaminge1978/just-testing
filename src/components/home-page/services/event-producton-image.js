@@ -7,7 +7,7 @@ export default () => {
         {
             file(relativePath: {eq: "services/event-production.jpg"}) {
                 childImageSharp {
-                    fluid(quality: 100, maxWidth: 1000) {
+                    fluid(quality: 75, maxWidth: 1000) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
 

@@ -9,6 +9,7 @@
     color: greenyellow;
     font-size: 24px;
     transition:0.3s;
+    letter-spacing: -0rem;
 }
 
 .banner-text a:hover {
@@ -72,7 +73,8 @@
       font-size: 4rem;
       transform: translateY(-50%);
       z-index: 1;
-      font-weight: bold;
+      font-weight: 700;
+      letter-spacing: -0.2rem;
 
       span {
         display: block;
@@ -150,7 +152,7 @@
     &__inner {
       .banner-text {
         font-size: 40px;
-
+        letter-spacing: -0.1rem;
         span {
           white-space: normal;
         }
@@ -187,7 +189,7 @@
   .banner-section {
     &__inner {
       .banner-text {
-        font-size: 25px;
+        font-size: 29px;
       }
     }
   }

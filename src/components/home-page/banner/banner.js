@@ -62,7 +62,7 @@ export default () => {
       </div>
       <div className="banner-section__inner">
         <h1 ref={el => (header = el)} className="banner-text">
-          <span><strong>We love experiences.</strong></span>
+          <span>We love experiences.</span>
           <span>We create them.</span>
           <AniLink
                     className=""

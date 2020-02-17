@@ -21,6 +21,6 @@ export default () => {
     }
 
     return (
-        <Img fluid={imageQuery.file.childImageSharp.fluid} alt={imageQuery.file.name} loading="lazy" className="" />
+        <Img fluid={imageQuery.file.childImageSharp.fluid} alt={imageQuery.file.name} className="" />
     );
 };

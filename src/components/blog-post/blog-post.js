@@ -52,7 +52,6 @@ export default ({ data, pageContext }) => {
         <Img
           fluid={thumbnail.fluid}
           alt={thumbnail.title}
-          loading="lazy"
           className="animated-img"
         />
       </ContainerLabelled>

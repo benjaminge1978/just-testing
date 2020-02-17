@@ -52,7 +52,6 @@ const Case = props => {
                   ref={el => (picOverlay = el)}
                   fluid={fluidImg.fluid}
                   alt={fluidImg.title}
-                  loading="lazy"
                   className="animated-img"
                 />
               </div>

@@ -20,7 +20,6 @@ const BlogPostPreview = ({ title, excerpt, thumb, date, slug }) => {
             <Img
               fluid={thumb.fluid}
               alt={thumb.title}
-              loading="lazy"
               className="animated-img"
             />
           </Fade>

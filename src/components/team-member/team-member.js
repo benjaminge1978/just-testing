@@ -13,7 +13,6 @@ const TeamMember = ({ photo, name, position }) => (
           alt={name}
           objectFit="cover"
           objectPosition="50% 50%"
-          loading="lazy"
           className=""
         />
       </div>

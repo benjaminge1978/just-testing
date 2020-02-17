@@ -209,7 +209,7 @@ export const query = graphql`
                 }
             }
             section3Image {
-                fluid(maxWidth: 1200,quality: 75) {
+                fluid(maxWidth: 1500,quality: 75) {
                     base64
                     sizes
                     src

@@ -20,6 +20,6 @@ export default () => {
     }
 
     return (
-        <Img fluid={promoImageQuery.file.childImageSharp.fluid} alt="Promo" loading="lazy" className="" />
+        <Img fluid={promoImageQuery.file.childImageSharp.fluid} alt="Promo" className="" />
     );
 };

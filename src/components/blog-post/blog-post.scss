@@ -129,6 +129,7 @@
 
       &.next-post-link {
         float: right;
+        margin-top: 30px;
       }
     }
 
@@ -156,8 +157,8 @@
   .blog-post-single {
 
     &__content, &__familiarity-links {
-      padding-right: 25px;
-      padding-left: 25px;
+      padding-right: 0px;
+      padding-left: 0px;
       padding-bottom: 50px;
       margin:30px;
     }

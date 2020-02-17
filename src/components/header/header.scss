@@ -17,6 +17,7 @@ header.site-header {
 
     .site-header-brand {
         width: 130px;
+        z-index:1000;
     }
 }
 
@@ -25,7 +26,7 @@ header.sticky {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 99999999999999999;
     background-color: #fff!important;
     padding: 20px;

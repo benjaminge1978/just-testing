@@ -6,7 +6,7 @@ import "./cookie-notice.scss"
 const CookieNotice = () => {
   const setCookie = () => {
     Cookies.set("gatsby-gdpr-google-analytics", "true", { expires: 365 })
-   Cookies.set("gatsby-gdpr-facebook-pixel", "true", { expires: 365 }) 
+   Cookies.set("gatsby-gdpr-facebook-pixel", "true", { expires: 0 }) 
   }
 
   return (

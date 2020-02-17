@@ -126,9 +126,6 @@
       width: 100px;
       min-width: 100px;
 
-      svg {
-        display: none;
-      }
 
       span {
         height: 100px;
@@ -153,12 +150,22 @@
     }
 
     &__inner {
+      height: calc(100vh - 70px);
       .banner-text {
         font-size: 40px;
         letter-spacing: -0.1rem;
         span {
           white-space: normal;
         }
+      }
+    }
+    svg {
+      position: absolute;
+      z-index: 200;
+      left: 30px;
+      bottom:10px;
+      .st0 {
+        fill:#FFF;
       }
     }
   }

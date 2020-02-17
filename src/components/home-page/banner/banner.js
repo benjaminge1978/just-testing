@@ -46,7 +46,7 @@ export default () => {
       file(relativePath: { eq: "seventa-header.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1400, quality: 80) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
         name

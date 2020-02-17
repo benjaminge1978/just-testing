@@ -82,6 +82,7 @@ export const query = graphql`
         thumbnail {
           title
           fluid(maxWidth: 500, quality: 50) {
+            base64
             sizes
             src
             srcSet

@@ -40,7 +40,7 @@ const CasePage = ({data}) => {
                 {
                     'undefined' !== typeof thumbnail.fluid
                         ?   <ContainerLabelled label={<AniLink cover to={category.slug} direction="up" bg="#FFF"><Arrow /></AniLink>} className="case-page-thumbnail">
-                            <Img fluid={thumbnail.fluid} alt={thumbnail.title} loading="lazy" className="" />
+                            <Img fluid={thumbnail.fluid} alt={thumbnail.title} className="" />
                         </ContainerLabelled>
                     : null
                 }
@@ -66,7 +66,7 @@ const CasePage = ({data}) => {
                             {
                                 imagesRow.map((image, index) => (
                                     <div key={index} className="case-page-images-row__item">
-                                        <Img fluid={image.fluid} alt={image.title} loading="lazy" className="" />
+                                        <Img fluid={image.fluid} alt={image.title} className="" />
                                     </div>
                                 ))
                             }
@@ -107,7 +107,7 @@ const CasePage = ({data}) => {
                     section3Subtitle && section3Title && section3Content && section3Image
                     ?   <div className="case-page-text-3">
                             <div className="case-page-text-3__image">
-                                <Img fluid={section3Image.fluid} alt={section3Image.title} loading="lazy" className="" />
+                                <Img fluid={section3Image.fluid} alt={section3Image.title} className="" />
                             </div>
                             <div className="case-page-text-3__content">
                                 <SectionHeading
@@ -209,7 +209,7 @@ export const query = graphql`
                 }
             }
             section3Image {
-                fluid(maxWidth: 800,quality: 75) {
+                fluid(maxWidth: 1200,quality: 75) {
                     base64
                     sizes
                     src
@@ -220,7 +220,7 @@ export const query = graphql`
                 title
             }
             bigImage {
-                fluid(maxWidth: 1600, quality: 75) {
+                fluid(maxWidth: 1500, quality: 75) {
                     base64
                     sizes
                     src

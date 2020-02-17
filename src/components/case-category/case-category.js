@@ -81,7 +81,7 @@ export const query = graphql`
         slug
         thumbnail {
           title
-          fluid(maxWidth: 1000, quality: 75) {
+          fluid(maxWidth: 800, quality: 75) {
             base64
             sizes
             src

@@ -145,8 +145,7 @@ export const query = graphql`
                 slug
                 title
                 thumbnail {
-                    fluid(maxWidth: 1000, quality:80) {
-                        base64
+                    fluid(maxWidth: 800, quality:90) {
                         sizes
                         src
                         srcSet
@@ -164,13 +163,12 @@ export const query = graphql`
         contentfulCases(id: {eq: $id}) {
             title
             thumbnail {
-                fluid(maxWidth: 1300, quality: 75) {
+                fluid(maxWidth: 1400, quality: 90) {
                     srcSet
                     src
                     srcSetWebp
                     srcWebp
                     sizes
-                    base64
                 }
             }
             caseCategories {
@@ -184,7 +182,6 @@ export const query = graphql`
             }
             imagesRow {
                 fluid(quality: 75, maxWidth: 800) {
-                    base64
                     sizes
                     src
                     srcSet
@@ -210,7 +207,6 @@ export const query = graphql`
             }
             section3Image {
                 fluid(maxWidth: 1500,quality: 75) {
-                    base64
                     sizes
                     src
                     srcSet
@@ -221,7 +217,6 @@ export const query = graphql`
             }
             bigImage {
                 fluid(maxWidth: 1500, quality: 75) {
-                    base64
                     sizes
                     src
                     srcSet

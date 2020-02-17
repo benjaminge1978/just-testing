@@ -51,6 +51,7 @@ export default class extends React.Component {
 
         return (
             <Fragment>
+                <div className="vidoverlay"></div>
                 <div className="baner-section-video-position" style={{height: '100%'}}>
                     <div id="banner-section-video" className="banner-section__video">
                         <iframe

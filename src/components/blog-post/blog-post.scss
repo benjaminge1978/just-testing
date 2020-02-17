@@ -129,7 +129,6 @@
 
       &.next-post-link {
         float: right;
-        margin-top: 30px;
       }
     }
 
@@ -173,6 +172,10 @@
       }
     }
   }
+  .next-post-link {
+    margin-top: 30px!important;
+  }
+  
 }
 
 @media all and (max-width: 576px) {

@@ -7,7 +7,7 @@ export default () => {
         query Image1 {
             file(relativePath: {eq: "seventa-about-painting.jpg"}) {
                 childImageSharp {
-                    fluid(webpQuality: 75, jpegQuality: 75, fit: COVER, maxWidth: 1800) {
+                    fluid(webpQuality: 100, jpegQuality: 100, fit: COVER, maxWidth: 1800) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }

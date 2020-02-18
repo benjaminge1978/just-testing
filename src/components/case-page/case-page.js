@@ -145,7 +145,7 @@ export const query = graphql`
                 slug
                 title
                 thumbnail {
-                    fluid(maxWidth: 500, quality:50) {
+                    fluid(maxWidth: 1000, quality:100) {
                         sizes
                         src
                         srcSet
@@ -181,7 +181,7 @@ export const query = graphql`
                 services
             }
             imagesRow {
-                fluid(quality: 75, maxWidth: 800) {
+                fluid(quality: 100, maxWidth: 800) {
                     sizes
                     src
                     srcSet
@@ -206,7 +206,7 @@ export const query = graphql`
                 }
             }
             section3Image {
-                fluid(maxWidth: 1500,quality: 90) {
+                fluid(maxWidth: 1500,quality: 100) {
                     sizes
                     src
                     srcSet
@@ -216,7 +216,7 @@ export const query = graphql`
                 title
             }
             bigImage {
-                fluid(maxWidth: 1500, quality: 90) {
+                fluid(maxWidth: 1500, quality: 100) {
                     sizes
                     src
                     srcSet

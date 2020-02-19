@@ -7,7 +7,7 @@ export default () => {
         query PromoImage {
             file(relativePath: {eq: "seventa-about-paint.jpg"}) {
                 childImageSharp {
-                    fluid(webpQuality: 100, jpegQuality: 100, maxWidth: 1600) {
+                    fluid(webpQuality: 85, jpegQuality: 85, maxWidth: 1600) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }

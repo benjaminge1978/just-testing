@@ -87,7 +87,7 @@ export const query = graphql`
         file {
           url
         }
-        fluid(quality: 100, maxHeight: 1000) {
+        fluid(quality: 85, maxHeight: 1000) {
           base64
           sizes
           src

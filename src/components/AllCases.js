@@ -10,7 +10,7 @@ const AllCases = () => {
         node {
           title
           image {
-            fluid(quality: 100, maxWidth: 1000){
+            fluid(quality: 85, maxWidth: 1000){
               ...GatsbyContentfulFluid_withWebp_noBase64
             }
           }

@@ -145,7 +145,7 @@ export const query = graphql`
                 slug
                 title
                 thumbnail {
-                    fluid(maxWidth: 1000, quality:100) {
+                    fluid(maxWidth: 1000, quality:90) {
                         sizes
                         src
                         srcSet
@@ -163,7 +163,7 @@ export const query = graphql`
         contentfulCases(id: {eq: $id}) {
             title
             thumbnail {
-                fluid(maxWidth: 1400, quality: 80) {
+                fluid(maxWidth: 1400, quality: 90) {
                     srcSet
                     src
                     srcSetWebp

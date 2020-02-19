@@ -12,7 +12,7 @@ export default () => {
         nodes {
           logo {
             title
-            fluid(maxWidth: 400, quality: 90) {
+            fluid(maxWidth: 400, quality: 80) {
               ...GatsbyContentfulFluid_withWebp_noBase64
             }
           }

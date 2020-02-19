@@ -163,7 +163,7 @@ export const query = graphql`
         contentfulCases(id: {eq: $id}) {
             title
             thumbnail {
-                fluid(maxWidth: 1400, quality: 90) {
+                fluid(maxWidth: 1400, quality: 80) {
                     srcSet
                     src
                     srcSetWebp

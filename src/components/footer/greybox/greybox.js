@@ -7,7 +7,7 @@ import './greybox.scss'
 export default () => {
     return (
         <>
-            <h3>Let's plan your next event</h3>
+            <h3>Get in touch</h3>
             <p className="lets-chat-desc">We’re always happy to talk through any new projects and ideas.</p>
             <div className="greybox-contact">
                 <div className="grey-box-col">

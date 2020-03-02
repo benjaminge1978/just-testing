@@ -27,7 +27,7 @@ export default () => {
 
   return (
     <div>
-      <h3>Some of our clients</h3>
+      <h3>Brands that employ us</h3>
       <div className="customers-row">
         {customers.allContentfulCustomers.nodes.map((customer, index) => (
           <CustomerItem logo={customer.logo} key={index} />

@@ -9,11 +9,10 @@ export default () => {
       <div id="scrollStarts" className="promo-section">
         <Fade bottom cascade>
           <div className="promo-section__inner">
-            <h3>Creating unforgettable experiences and events.</h3>
+            <h3>We help brands and clients create awesome events. </h3>
             <p>
-              We are your best-kept secret. A highly passionate and creative
-              team that works behind the scenes to design, plan, create and
-              manage your event.
+            Our team are experts. We’ve worked on all manner of events for global brands and companies. We know our purpose and we deliver results. 
+
             </p>
           </div>
         </Fade>

@@ -22,10 +22,8 @@ export default () => (
           <span className="experience__dash">————</span>
           <span className="experience__text">
             <p>
-              It’s no secret that the ‘Events’ industry is a huge field by any
-              measure. Our portfolio of work includes event design, management
-              and production for global brands, private clients and corporate
-              companies.{" "}
+            We’re here to help you. Our portfolio of work includes event design, management and production for global brands, private clients and corporate companies.
+{" "}
             </p>
           </span>
         </div>

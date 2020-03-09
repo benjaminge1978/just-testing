@@ -21,15 +21,7 @@
   }
 
   &-section {
-    background: linear-gradient(
-      to bottom,
-      white 0%,
-      white 150px,
-      #efefef 150px,
-      #efefef 75%,
-      white 75%,
-      white 100%
-    );
+
 
     .container-labelled {
       &__label {
@@ -38,7 +30,7 @@
       }
 
       &__inner {
-        padding-right: 175px;
+        padding-right: 145px;
 
         .case-studies-list {
           display: flex;

@@ -31,7 +31,7 @@ const BlogPostPreview = ({ title, excerpt, thumb, date, slug }) => {
           </AniLink>
         </h2>
         <p className="blog-post-preview__excerpt">{excerpt}</p>
-        <Arrow />
+       
       </div>
     </Fade>
   )

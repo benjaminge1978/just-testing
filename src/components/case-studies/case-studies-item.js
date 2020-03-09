@@ -36,7 +36,7 @@ const CaseStudiesItem = ({ title, thumbSrc, slug, excerpt, thumb }) => {
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
         <AniLink cover to={itemLink} direction="up" bg="#FFFFFF">
-          <Arrow />
+
         </AniLink>
       </div>
     </Fade>

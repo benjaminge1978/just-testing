@@ -41,7 +41,7 @@ export default () => (
         />
       </div>
       <div className="social-links">
-        <span className="social-links__text">Follow us </span>
+        <span className="social-links__text"></span>
         <SocialMenu />
       </div>
     </div>

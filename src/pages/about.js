@@ -47,9 +47,9 @@ export default ({ data }) => {
                 <p className="light-text">From humble beginnings</p>
                 <h2>You’ll be pleased to hear that we’ve moved on from the shed…</h2>
                 <LongDashText>
-                    <p>Our offices are now conjoined to a 26,000 ft square warehouse stocked floor to ceiling with event hire equipment provided by our sister company Innovative Hire. 
+                    <p>Our offices are now conjoined to a 26,000 ft square warehouse stocked floor to ceiling with event hire equipment provided by our sister company <a href="https://innovativehire.co.uk">Innovative Hire</a>. 
 
-As a team we love what we do and are passionate about our work. Creativity and organisation sit hand in hand with us. We are extremely proud of our client base, having retained clients from day one, whilst welcoming exciting and upcoming global brands.</p>
+ As a team we love what we do and are passionate about our work.</p> <p>Creativity and organisation sit hand in hand with us. We are extremely proud of our client base, having retained clients from day one, whilst welcoming exciting and upcoming global brands.</p>
                 </LongDashText>
             </ContainerLabelled>
             {

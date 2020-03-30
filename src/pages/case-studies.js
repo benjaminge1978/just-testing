@@ -18,7 +18,8 @@ export default ({ data }) => {
       <PageHeading
         pageName="Case Studies"
         pageTitle="Here’s an insight into our world of events."
-        description="We’re extremely proud of our client relationships and we love creating unforgettable experiences and events. Our portfolio of work ranges from global brands to private clients and corporate companies. Take a look… "
+        description="We are extremely proud of our client relationships and the range of services we provide. 
+        Experts in events. We deliver results;"
       >
         <ul className="case-studies-heading-links">
           <li>

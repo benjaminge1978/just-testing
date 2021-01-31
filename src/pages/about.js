@@ -21,10 +21,10 @@ export default ({ data }) => {
         <Layout className="about-page-layout">
             <SEO title="About Seventa Events" description="We are a mighty team, specialising in events"/>
             <PageHeading
-                pageName="Welcome to Seventa Events!"
-                pageTitle="A highly skilled team, specialising in all things events."
-                description="Founded in 2011 by Simon Brooks, we were built from a drive of enthusiasm for the industry, the desire to create a talented group of event managers that create, deliver and excite for our clients. 
-                Like a number of success stories, we started out of a garden shed. We now have hubs in London and Bournemouth respectively."
+                pageName="We are Seventa"
+                pageTitle="A highly skilled team, specialising in all things events, hospitality and experience led."
+                description="Founded in 2011 by Simon Brooks, we are built on a love and drive of enthusiasm for the industry, the desire to create a talented group of individuals that create, deliver and excite for our clients. 
+                Like a number of success stories, we started out of a garden shed. We now have hubs in London and Bournemouth amazing clients across the UK, and a small portfolio of our own successful brands and events."
             />
             <ContainerLabelled label={<Arrow />} className="about-page-promo" innerClassName="about-page-promo__inner" labelClassName="about-page-promo__label">
                 <PromoImage />
@@ -44,22 +44,42 @@ export default ({ data }) => {
                 </div>
             </div>
             <ContainerLabelled className="about-page-text about-page-text--grey" innerClassName="light-bg">
-                <p className="light-text">From humble beginnings</p>
-                <h2>You’ll be pleased to hear that we’ve moved on from the shed…</h2>
+                <p className="light-text">Think BIG</p>
+                <h2>Creative individuals bringing ideas to life…</h2>
                 <LongDashText>
-                    <p>Our offices are now conjoined to a 26,000 ft square warehouse stocked floor to ceiling with event hire equipment provided by our sister company <a href="https://innovativehire.co.uk">Innovative Hire</a>. 
+                    <p>With our Head Office in Bournemouth based out of a 20,000 sq ft industrial warehouse space, we pull together our collective ideas, skills, experiences and we make things happen.
 
- As a team we love what we do and are passionate about our work.</p> <p>Creativity and organisation sit hand in hand with us. We are extremely proud of our client base, having retained clients from day one, whilst welcoming exciting and upcoming global brands.</p>
+                    Creative ideas backed up with organised minds. We have been on both sides of the fence, we run our own events across the UK, and we also create them for others. We are able to think like a client, a customer, and a guest.</p> 
+                    <p>We are extremely proud of the clients we have, our brands that we have built, and the events & experiences we produce. </p>
                 </LongDashText>
             </ContainerLabelled>
             {
                 members && members.length
                 ?   <div className="team-members-section">
+            <ContainerLabelled className="about-page-text about-page-text--grey" innerClassName="">
+                <h2>Our sister brands</h2>
+                <LongDashText>
+                    <p>Whilst we were founded as an Events agency, we have grown over the years into a collective group of creative brands and businesses operating at all levels across the event & hospitality industry.</p> 
+                    <p>• Seventa Events</p>
+                    <p>• Innovative Hire</p>
+                    <p>• Alpine Christmas Markets</p>
+                    <p>• Bournemouth Christmas Market</p>
+                    <p>• Snow House Exeter</p>
+                    <p>• The Street Kings</p>
+                    <p>• ChurrosKings</p>
+                    <p>• The Back Yard Project </p>
+                    <p>• Abbots Court Country Retreat </p>
+
+                </LongDashText>
+            </ContainerLabelled>
+
+   {/*                
                         <SectionHeading
-                            sectionName="The team"
-                            sectionTitle="Meet the team"
-                        />
-                        <ContainerLabelled label={<span className="team-members-section__label">The team ———</span>}>
+                            sectionName=""
+                            sectionTitle="Our sister brands"
+                            />
+                        <ContainerLabelled label={<span className="team-members-section__label"></span>}>
+                        <p>Whilst we were founded as an Events agency, we have grown over the years into a collective group of creative brands and businesses operating at all levels across the event & hospitality industry.</p>
                             <div className="team-members-list">
                                 {
                                     members.map((member, index) => (
@@ -73,7 +93,7 @@ export default ({ data }) => {
                                     ))
                                 }
                             </div>
-                        </ContainerLabelled>
+                        </ContainerLabelled> */}
                     </div>
                 : null
             }

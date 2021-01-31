@@ -14,7 +14,7 @@ export default () => (
             <div className="policy-content">
             <p>Effective date: May 10, 2018</p>
 
-	<p>19ten Limited Trading as Seventa Events (&#8220;us&#8221;, &#8220;we&#8221;, or &#8220;our&#8221;) operates the https://www.seventa.co.uk/ website (the &#8220;Service&#8221;).</p>
+	<p>Seventa Events Ltd Trading as Seventa Events (&#8220;us&#8221;, &#8220;we&#8221;, or &#8220;our&#8221;) operates the https://www.seventa.co.uk/ website (the &#8220;Service&#8221;).</p>
 	<p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 	<p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://www.seventa.co.uk/</p>
 	<p>&nbsp;</p>
@@ -58,7 +58,7 @@ export default () => (
 	· Preference Cookies. We use Preference Cookies to remember your preferences and various settings. 
 	· Security Cookies. We use Security Cookies for security purposes.</p>
 	<p class="title title-lg">Use of Data</p>
-	<p>19ten Limited Trading as Seventa Events uses the collected data for various purposes:</p>
+	<p>Seventa Events Ltd Trading as Seventa Events uses the collected data for various purposes:</p>
 	<ul>
 		<li>To provide and maintain our Service</li>
 		<li>To notify you about changes to our Service</li>
@@ -71,23 +71,23 @@ export default () => (
 	</ul>
 	<p>&nbsp;</p>
 	<p class="title-lg">Retention of Data</p>
-	<p>19ten Limited Trading as Seventa Events will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
-	<p>19ten Limited Trading as Seventa Events will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.</p>
+	<p>Seventa Events Ltd Trading as Seventa Events will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+	<p>Seventa Events Ltd Trading as Seventa Events will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.</p>
 	<p>&nbsp;</p>
 	<p class="title title-lg">Transfer Of Data</p>
 	<p>Your information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
 	<p>If you are located outside United Kingdom and choose to provide information to us, please note that we transfer the data, including Personal Data, to United Kingdom and process it there.</p>
 	<p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
-	<p>19ten Limited Trading as Seventa Events will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
+	<p>Seventa Events Ltd Trading as Seventa Events will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
 	<p>&nbsp;</p>
 	<p class="title title-lg">Disclosure Of Data</p>
 	<p><strong>Disclosure for Law Enforcement</strong></p>
-	<p>Under certain circumstances, 19ten Limited Trading as Seventa Events may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+	<p>Under certain circumstances, Seventa Events Ltd Trading as Seventa Events may be required to disclose your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
 	<p><strong>Legal Requirements</strong></p>
-	<p>19ten Limited Trading as Seventa Events may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+	<p>Seventa Events Ltd Trading as Seventa Events may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
 	<ul>
 		<li>To comply with a legal obligation</li>
-		<li>To protect and defend the rights or property of 19ten Limited Trading as Seventa Events</li>
+		<li>To protect and defend the rights or property of Seventa Events Ltd Trading as Seventa Events</li>
 		<li>To prevent or investigate possible wrongdoing in connection with the Service</li>
 		<li>To protect the personal safety of users of the Service or the public</li>
 		<li>To protect against legal liability</li>
@@ -96,7 +96,7 @@ export default () => (
 	<p><strong>Security Of Data</strong></p>
 	<p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
 	<p><strong>Your Rights</strong></p>
-	<p>19ten Limited Trading as Seventa Events aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.</p>
+	<p>Seventa Events Ltd Trading as Seventa Events aims to take reasonable steps to allow you to correct, amend, delete, or limit the use of your Personal Data.</p>
 	<p>Whenever made possible, you can update your Personal Data directly within your account settings section. If you are unable to change your Personal Data, please contact us to make the required changes.</p>
 	<p>If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.</p>
 	<p>In certain circumstances, you have the right:</p>
@@ -106,7 +106,7 @@ export default () => (
 		<li>To request the deletion of Personal Data held about you</li>
 	</ul>
 	<p>&nbsp;</p>
-	<p>You have the right to data portability for the information you provide to 19ten Limited Trading as Seventa Events. You can request to obtain a copy of your Personal Data in a commonly used electronic format so that you can manage and move it.</p>
+	<p>You have the right to data portability for the information you provide to Seventa Events Ltd Trading as Seventa Events. You can request to obtain a copy of your Personal Data in a commonly used electronic format so that you can manage and move it.</p>
 	<p>Please note that we may ask you to verify your identity before responding to such requests.</p>
 	<p>&nbsp;</p>
 	<p class="title title-lg">Service Providers</p>
@@ -138,7 +138,7 @@ export default () => (
 	<p>&nbsp;</p>
 	<h3><strong>Terms &amp; Conditions</strong></h3>
 	<p>&nbsp;</p>
-	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD 19ten Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
+	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD Seventa Events Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
 	<p class="p3">Seventa Events – Terms &amp; Conditions</p>
 	<p class="p3"><b>1. Definitions</b></p>
 	<ol class="ol1">
@@ -146,7 +146,7 @@ export default () => (
 		<li class="li4">b. The &#8216;Correspondence&#8217; shall refer to all proposals, letters, emails, telephone conversations and any other form of communication in relation to the event.</li>
 		<li class="li4">c. The &#8216;Client&#8217; refers to the customer described in all Correspondence, event documentation, proposals and schedules.</li>
 		<li class="li4">d. The &#8216;Event&#8217; means all services, drinks, entertainment and meals as described in the Correspondence, event documentation, schedules and proposals.</li>
-		<li class="li4">e. &#8216;Seventa Events&#8217; shall refer to 19ten ltd trading as Seventa Events.</li>
+		<li class="li4">e. &#8216;Seventa Events&#8217; shall refer to Seventa Events ltd trading as Seventa Events.</li>
 		<li class="li3">f. &#8216;Bookings&#8217; mean any event booked and agreed between the Client and Seventa Events.</li>
 	</ol>
 	<p class="p3"><b>2. Acceptance</b></p>
@@ -169,7 +169,7 @@ export default () => (
 		<li class="li4">i. Save where a fixed price has been agreed and recorded in writing by Seventa Events, all prices quoted by Seventa Events may be amended upon notice to the Client in the event of errors or omissions in any quotation or Correspondence or where an increase or decrease of price is caused by a change in circumstances beyond the reasonable control of Seventa Events, including increases or decreases in prices imposed upon Seventa Events by its suppliers in connection with an Event.</li>
 		<li class="li3">j. If Seventa Events, in its absolute discretion and in writing, waives the conditions relating to payment for an event as set out in this clause, such waiver shall not prejudice the rights of Seventa Events to recover from the Client the amount which would otherwise have been payable under these terms and conditions in the event of a cancellation or amendment of a Booking.</li>
 	</ol>
-	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD 19ten Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
+	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD Seventa Events Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
 	<p class="p3"><b>4. Numbers</b></p>
 	<ol class="ol1">
 		<li class="li4">a. All Bookings of whatever nature are accepted at the discretion of Seventa Events and on the understanding that the number of persons for whom the event is arranged is to be regarded as the minimum and that no refund or allowance shall be made by Seventa Events if fewer persons actually attend the Event.</li>
@@ -205,7 +205,7 @@ export default () => (
 		<li class="li4">c. Seventa Events does not accept any responsibility for the loss or damage of personal property belonging to Clients or their guests.</li>
 		<li class="li3">d. Neither Seventa Events nor its employees shall be liable for any death, injury, damage, loss, illness, delay or expense caused to the Client, its employees, licensees or invitees or any other person or any other persons</li>
 	</ol>
-	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD 19ten Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
+	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD Seventa Events Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
 	<ol class="ol1">
 		<li class="li4">attending the booked Event except insofar as such death, injury, loss, illness, delay or expense results from either the proven negligence or a deliberate action or omission of Seventa Events. Seventa Events’ liability shall in all cases be limited to the sums paid by the Client and exclude all indirect or consequential loss of whatever nature. Nothing in this clause shall affect Seventa Events liability for death or personal injury caused by its negligence, for which Seventa Events maintains insurance of up to £10million per claim or series of related claims.</li>
 		<li class="li4">e. The Client agrees to indemnify Seventa Events against any injury, damage, loss, illness, delay or expense caused to the Venue, its employees, licensees or invitees or any other person or persons attending the booked Event except insofar as such injury, loss, illness, delay or expense results from either the proven negligence or deliberate action or omission of Seventa Events.</li>
@@ -235,7 +235,7 @@ export default () => (
 		<li class="li4">f. Seventa Events shall not be responsible for possessions brought to the Event by the Client or its guests; such possessions are brought to Events at the Client’s own risk.</li>
 		<li class="li3">g. The rights granted to the Client under this agreement may not be transferred or assigned to a third party without</li>
 	</ol>
-	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD 19ten Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
+	<p class="p2">Address: Seventa Events, Lion Works Building, 543 Wallisdown Road, Bournemouth, Dorset, BH12 5AD Seventa Events Ltd trading as &#8216;Seventa Events&#8217;. Registered Address: Unit 2, 446 Commercial Road, Aviation Business Park, Christchurch, Dorset, BH23 6NW. Registered in England and Wales. Company Number: 07577672. VAT Number: GB 109 8047 11</p>
 	<ol class="ol1">
 		<li class="li4">the prior written consent of Seventa Events.</li>
 		<li class="li4">h. This contract supersedes and excludes all prior representations, discussions, understandings or agreements in relation to the subject matter of this contract. The terms of this contract may not be modified except by agreement in writing signed by both parties or their representatives.</li>

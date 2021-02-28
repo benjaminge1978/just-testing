@@ -60,15 +60,12 @@ export default ({ data }) => {
                 <h2>Our sister brands</h2>
                 <LongDashText>
                     <p>Whilst we were founded as an Events agency, we have grown over the years into a collective group of creative brands and businesses operating at all levels across the event & hospitality industry.</p> 
-                    <p>• Seventa Events</p>
-                    <p>• Innovative Hire</p>
-                    <p>• Alpine Christmas Markets</p>
-                    <p>• Bournemouth Christmas Market</p>
-                    <p>• Snow House Exeter</p>
-                    <p>• The Street Kings</p>
-                    <p>• ChurrosKings</p>
-                    <p>• The Back Yard Project </p>
-                    <p>• Abbots Court Country Retreat </p>
+                    <p>• Seventa Events - <a href="https://seventa.co.uk/">www.seventa.co.uk</a></p>
+                    <p>• Innovative Hire - <a href="https://innovativehire.co.uk/">www.innovativehire.co.uk</a></p>
+                    <p>• Alpine Christmas Markets - <a href="https://christmasinbournemouth.co.uk">www.christmasinbournemouth.co.uk</a></p>
+                    <p>• The Street Kings - <a href="https://thestreetkings.co.uk">www.thestreetkings.co.uk</a></p>
+                    <p>• ChurrosKings - <a href="https://churroskings.com">www.churroskings.com</a></p>
+                    <p>• The Back Yard Project - <a href="https://thebackyardproject.co.uk">www.thebackyardproject.co.uk </a></p>
 
                 </LongDashText>
             </ContainerLabelled>

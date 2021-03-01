@@ -24,7 +24,7 @@ const BlogPostPreview = ({ title, excerpt, thumb, date, slug }) => {
             />
           </Fade>
         </AniLink>
-        <p className="blog-post-preview__date">{date}</p>
+        
         <h2 className="blog-post-preview__title">
           <AniLink to={`/blog/${slug}`} className="animated-link">
             {title}

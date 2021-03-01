@@ -29,7 +29,7 @@ export default () => (
         <Menu
           id="footer-menu"
           links={[
-            { href: "/images/4nlw2v6q7d79/7CLki5r92l0KlQjueNNOaF/f63f2365bf5934a2b22d3dbf1f33d7c1/seventa-tc.pdf", text: "Privacy Policy & T&C's" },
+            { href: "privacy-policy", text: "Privacy Policy & T&C's" },
             { href: "csr", text: "CSR" },
             { href: "cookie-policy", text: "Cookie Policy" },
             {

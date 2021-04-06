@@ -78,6 +78,7 @@ export default class extends React.Component {
             {href: 'brand-activation', text: 'Brand activations'},
             {href: 'event-management', text: 'Event management'},
             {href: 'venue-sourcing', text: 'Venue sourcing'},
+            {href: 'blog/innovative-hire', text: 'Innovative Hire'},
         ];
 
         const topMenuLinks = [

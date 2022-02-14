@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/innovative-hire"
+  from = "https://seventa.co.uk/innovative-hire"
   to = "https://innovativehire.co.uk/"
   status = 301
-	force = true
+  force = true

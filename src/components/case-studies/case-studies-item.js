@@ -14,7 +14,7 @@ const CaseStudiesItem = ({ title, thumbSrc, slug, excerpt, thumb }) => {
       <div className="case-studies-list-item">
 			{itemLink === "/innovative-hire" ?
 			<>
-			<a href="https://www.innovativehire.com/" target="_blank" rel="noopener noreferrer" className="case-studies-list-item__thumb">
+			<a href="https://innovativehire.co.uk/" target="_blank" rel="noopener noreferrer" className="case-studies-list-item__thumb">
           <Fade bottom cascade distance="70px">
             <Img
               fluid={thumb.fluid}
@@ -24,7 +24,7 @@ const CaseStudiesItem = ({ title, thumbSrc, slug, excerpt, thumb }) => {
           </Fade>
         </a>
         <h2 className="case-studies-list-item__title">
-          <a href="https://www.innovativehire.com/" target="_blank" rel="noopener noreferrer"className="animated-link">
+          <a href="https://innovativehire.co.uk/" target="_blank" rel="noopener noreferrer"className="animated-link">
             {title}
           </a>
         </h2>

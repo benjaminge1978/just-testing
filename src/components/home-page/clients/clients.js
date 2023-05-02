@@ -12,7 +12,7 @@ export default () => {
         nodes {
           logo {
             title
-            fluid(maxWidth: 400, quality: 80) {
+            fluid(maxWidth: 400, quality: 100) {
               ...GatsbyContentfulFluid_withWebp_noBase64
             }
           }
@@ -26,12 +26,10 @@ export default () => {
   }
 
   return (
-    <div>
-      <div className="clients-row">
-        {clients.allContentfulCustomers.nodes.map((client, index) => (
-          <ClientItem logo={client.logo} key={index} />
-        ))}
-      </div>
+    <div className="clients-row">
+      {clients.allContentfulCustomers.nodes.map((client, index) => (
+        <ClientItem logo={client.logo} key={index} />
+      ))}
     </div>
   )
 }

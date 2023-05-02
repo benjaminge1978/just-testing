@@ -24,13 +24,9 @@ export default () => {
         pageName="Our Clients"
         pageTitle="Seventa Events are trusted by the best..."
         description="As one of the UK’s leading events teams, we are delighted to have worked with a multitude of international clients. Working across multiple projects, we have created and delivered award-winning events for:"
-      />
-      <ContainerLabelled
-        className="clients-section"
-        label={<span className="section-label">Clients </span>}
       >
         <Clients />
-      </ContainerLabelled>
+      </PageHeading>
     </Layout>
   )
 }

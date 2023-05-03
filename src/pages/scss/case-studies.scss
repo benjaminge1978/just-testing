@@ -67,6 +67,17 @@
                 filter: grayscale(100%);
               }
 
+              @media all and (max-width: 768px) {
+                &__logo_wrapper {
+                  position: absolute;
+                  top: 5px;
+                  right: 5px;
+                }
+                &__logo {
+                  width: 50px !important;
+                }
+              }
+
               &__play_wrapper {
                 cursor: pointer;
                 position: absolute;
@@ -84,6 +95,12 @@
               &__play {
                 width: 110px !important;
                 height: auto;
+              }
+
+              @media all and (max-width: 768px) {
+                &__play {
+                  width: 80px !important;
+                }
               }
 
               &__title {

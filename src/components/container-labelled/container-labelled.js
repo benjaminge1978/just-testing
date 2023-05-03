@@ -1,11 +1,16 @@
 import "./container-labelled.scss"
 
+import Fade from "react-reveal/Fade"
 import PropsTypes from "prop-types"
 import React from "react"
 
 const ContainerLabelled = props => (
   <>
-    {props.title && <h2 className="container-title">{props.title}</h2>}
+    {props.title && (
+      <Fade bottom delay={100}>
+        <h2 className="container-title">{props.title}</h2>
+      </Fade>
+    )}
 
     <div
       className={

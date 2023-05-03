@@ -24,26 +24,32 @@
 
 .container-title {
   padding-left: 142px;
+  padding-right: 145px;
   margin-bottom: 40px;
+  font-size: 2rem;
+  line-height: 2.4rem;
 }
 
 @media all and (max-width: 992px) {
   .container-title {
     padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 40px;
   }
 }
 
 @media all and (max-width: 768px) {
   .container-title {
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 32px;
     margin-top: 80px;
+    line-height: 1.9rem;
   }
 }
 
 @media all and (max-width: 568px) {
   .container-title {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     margin-top: 40px;
   }
 }

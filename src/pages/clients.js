@@ -1,4 +1,4 @@
-import "./scss/case-studies.scss"
+import "./scss/clients.scss"
 
 import React from "react"
 
@@ -53,6 +53,17 @@ export default ({ data }) => {
               </div>
             )
           })}
+          <div className="case-studies-help">
+            <LongDashText>
+              <p>
+                Need help planning your next event, activation or conference?
+              </p>
+              <p>
+                Let us help take it to the next level on{" "}
+                <a href="mailto: hello@seventa.co.uk">hello@seventa.co.uk</a>
+              </p>
+            </LongDashText>
+          </div>
         </div>
       </ContainerLabelled>
     </Layout>

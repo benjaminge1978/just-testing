@@ -21,8 +21,6 @@
   }
 
   &-section {
-
-
     .container-labelled {
       &__label {
         width: 15px;
@@ -43,6 +41,7 @@
             color: inherit;
 
             .case-studies-list-item {
+              position: relative;
               &__thumb {
                 .gatsby-image-wrapper {
                   //padding-top: 70%;
@@ -56,7 +55,39 @@
                 }
               }
 
+              &__logo_wrapper {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+              }
+
+              &__logo {
+                width: 80px !important;
+                height: auto;
+                filter: grayscale(100%);
+              }
+
+              &__play_wrapper {
+                cursor: pointer;
+                position: absolute;
+                // center image
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  transform: translate(-50%, -50%) scale(1.1);
+                }
+              }
+
+              &__play {
+                width: 110px !important;
+                height: auto;
+              }
+
               &__title {
+                cursor: pointer;
                 margin-bottom: 0.5rem;
 
                 a {
@@ -133,22 +164,22 @@
       list-style-type: none;
       margin: 35px 0 0 0;
       padding: 0;
-  
+
       li {
         display: block;
         margin: 0 0px 20px 0;
-  
+
         a {
           display: block;
           color: inherit;
         }
-  
+
         &:last-of-type {
           margin-right: 0;
         }
       }
     }
-  
+
     &-section {
       background: linear-gradient(
         to bottom,
@@ -159,16 +190,11 @@
         white 75%,
         white 100%
       );
-  
-      .container-labelled {
-  
-        &__inner {
-  
-          .case-studies-list {
-  
-            .case-studies-category {
 
-  
+      .container-labelled {
+        &__inner {
+          .case-studies-list {
+            .case-studies-category {
               .case-studies-list-item {
                 &__thumb {
                   .gatsby-image-wrapper {
@@ -186,16 +212,14 @@
   }
 }
 
-
 .case-studies-heading-links li a {
-  text-decoration: none!important;
-      border-bottom: 3px solid #ccffcc!important;
-      margin-bottom: 20px;
+  text-decoration: none !important;
+  border-bottom: 3px solid #ccffcc !important;
+  margin-bottom: 20px;
 }
 
 @media all and (max-width: 1600px) {
   .case-studies-heading-links li a {
-        font-size: 0.8rem;
+    font-size: 0.8rem;
   }
 }
-

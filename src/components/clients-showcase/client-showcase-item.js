@@ -12,9 +12,27 @@ const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
             <Fade bottom cascade distance="70px">
               <Img
                 fluid={thumb.fluid}
-                alt={thumb.title}
-                className="animated-img"
+                alt={title}
+                className="animated-img-clients"
               />
+            </Fade>
+            <Fade bottom cascade distance="70px" delay={200}>
+              <div className="case-studies-list-item__logo_wrapper">
+                <img
+                  src={logo.file.url}
+                  alt={title}
+                  className="case-studies-list-item__logo"
+                />
+              </div>
+            </Fade>
+            <Fade bottom cascade distance="70px" delay={320}>
+              <div className="case-studies-list-item__play_wrapper">
+                <img
+                  src="/play.png"
+                  alt={title}
+                  className="case-studies-list-item__play"
+                />
+              </div>
             </Fade>
           </div>
           <h2 className="case-studies-list-item__title">

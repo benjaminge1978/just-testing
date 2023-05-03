@@ -72,8 +72,8 @@ export const query = graphql`
             }
           }
           clientsLogo {
-            fluid(quality: 100, maxWidth: 300) {
-              ...GatsbyContentfulFluid_withWebp_noBase64
+            file {
+              url
             }
           }
         }

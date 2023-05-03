@@ -654,6 +654,20 @@ a {
   transform: scale(1.2);
 }
 
+.animated-img-clients {
+  overflow: hidden;
+}
+
+.animated-img-clients img {
+  transition: all ease 1s !important;
+  filter: grayscale(100%);
+}
+
+.animated-img-clients:hover img {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+}
+
 ::-ms-input-placeholder,
 :-ms-input-placeholder,
 ::placeholder {
@@ -715,6 +729,7 @@ a.animated-link:hover {
 }
 
 p.animated-title {
+  pointer: cursor;
   font-size: 1.62671rem;
   line-height: 1.1;
   display: inline-block;

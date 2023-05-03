@@ -1,23 +1,14 @@
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Fade from "react-reveal/Fade"
 import Img from "gatsby-image"
 import PropsTyps from "prop-types"
 import React from "react"
 
-const ClientsShowcaseItem = ({ title, thumbSrc, slug, excerpt, thumb }) => {
-  const itemLink = `/${slug}`
-
+const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
   return (
     <Fade bottom cascade distance="70px">
       <div className="case-studies-list-item">
         <>
-          <AniLink
-            cover
-            to={itemLink}
-            direction="up"
-            bg="#FFFFFF"
-            className="case-studies-list-item__thumb"
-          >
+          <div className="case-studies-list-item__thumb">
             <Fade bottom cascade distance="70px">
               <Img
                 fluid={thumb.fluid}
@@ -25,11 +16,9 @@ const ClientsShowcaseItem = ({ title, thumbSrc, slug, excerpt, thumb }) => {
                 className="animated-img"
               />
             </Fade>
-          </AniLink>
+          </div>
           <h2 className="case-studies-list-item__title">
-            <p to={itemLink} className="animated-title">
-              {title}
-            </p>
+            <p className="animated-title">{title}</p>
           </h2>
         </>
       </div>

@@ -42,6 +42,8 @@ export default ({ data }) => {
                 <ClientsShowcaseItem
                   title={clientsName}
                   thumb={videoPlaceholderImage}
+                  logo={clientsLogo}
+                  video={clientsVideo}
                 />
               </div>
             )

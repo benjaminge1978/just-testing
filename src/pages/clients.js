@@ -1,5 +1,6 @@
 import "./scss/clients.scss"
 
+import Fade from "react-reveal/Fade"
 import React from "react"
 
 import Arrow from "../images/arrow-down.svg"
@@ -53,17 +54,19 @@ export default ({ data }) => {
               </div>
             )
           })}
-          <div className="case-studies-help">
-            <LongDashText>
-              <p>
-                Need help planning your next event, activation or conference?
-              </p>
-              <p>
-                Let us help take it to the next level on{" "}
-                <a href="mailto: hello@seventa.co.uk">hello@seventa.co.uk</a>
-              </p>
-            </LongDashText>
-          </div>
+          <Fade bottom delay={100}>
+            <div className="case-studies-help">
+              <LongDashText>
+                <p>
+                  Need help planning your next event, activation or conference?
+                </p>
+                <p>
+                  Let us help take it to the next level on{" "}
+                  <a href="mailto: hello@seventa.co.uk">hello@seventa.co.uk</a>
+                </p>
+              </LongDashText>
+            </div>
+          </Fade>
         </div>
       </ContainerLabelled>
     </Layout>

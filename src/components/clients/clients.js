@@ -28,11 +28,11 @@ export default () => {
 
   return (
     <div className="clients-row">
-      {clients.allContentfulCustomers.nodes.map((client, index) => (
-        <Fade down key={index} delay={100 * index}>
+      <Fade down delay={100}>
+        {clients.allContentfulCustomers.nodes.map((client, index) => (
           <ClientItem logo={client.logo} />
-        </Fade>
-      ))}
+        ))}
+      </Fade>
     </div>
   )
 }

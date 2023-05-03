@@ -6,16 +6,23 @@ import ReactPlayer from "react-player"
 import React, { useState } from "react"
 
 Modal.setAppElement("#___gatsby") // To prevent the accessibility warning
-
+/**
+ *
+ *
+ * @param {*} { title, logo, video, thumb }
+ * @returns
+ */
 const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
   const openModal = () => {
     setModalIsOpen(true)
+    document.body.classList.add("lock-scroll")
   }
 
   const closeModal = () => {
     setModalIsOpen(false)
+    document.body.classList.remove("lock-scroll")
   }
 
   return (
@@ -62,17 +69,20 @@ const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
         onRequestClose={closeModal}
         className="modal"
         overlayClassName="overlay"
+        shouldCloseOnOverlayClick={true}
       >
-        <button className="modal-close" onClick={closeModal}>
+        <div className="modal-close" onClick={closeModal}>
           &times;
-        </button>
-        <ReactPlayer
-          url={video.file.url}
-          playing={modalIsOpen}
-          controls
-          width="100%"
-          height="100%"
-        />
+        </div>
+        <div className="react-player-wrapper">
+          <ReactPlayer
+            url={video.file.url}
+            playing={modalIsOpen}
+            controls
+            width="100%"
+            height="100%"
+          />
+        </div>
       </Modal>
     </Fade>
   )

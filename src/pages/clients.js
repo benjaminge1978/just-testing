@@ -7,6 +7,7 @@ import Clients from "../components/clients/clients"
 import ClientsShowcaseItem from "../components/clients-showcase/client-showcase-item"
 import ContainerLabelled from "../components/container-labelled/container-labelled"
 import Layout from "../components/layout"
+import LongDashText from "../components/long-dash-text/long-dash-text"
 import PageHeading from "../components/page-heading/page-heading"
 import SEO from "../components/seo"
 
@@ -26,7 +27,11 @@ export default ({ data }) => {
       >
         <Clients />
       </PageHeading>
-      <ContainerLabelled label={<Arrow />} className="case-studies-section">
+      <ContainerLabelled
+        label={<Arrow />}
+        className="case-studies-section"
+        title="Don’t just take our word for it, our testimonials speak for themselves..."
+      >
         <div className="case-studies-list">
           {clientsShowcases.map(showcase => {
             const {

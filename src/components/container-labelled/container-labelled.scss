@@ -12,7 +12,6 @@
 
 @media all and (max-width: 992px) {
   .container-labelled {
-
     &__label {
       display: none;
     }
@@ -20,5 +19,31 @@
     &__inner {
       width: 100%;
     }
+  }
+}
+
+.container-title {
+  padding-left: 142px;
+  margin-bottom: 40px;
+}
+
+@media all and (max-width: 992px) {
+  .container-title {
+    padding-left: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container-title {
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .container-title {
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 }

@@ -1,5 +1,6 @@
 import "./clients.scss"
 
+import Fade from "react-reveal/Fade"
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -28,7 +29,9 @@ export default () => {
   return (
     <div className="clients-row">
       {clients.allContentfulCustomers.nodes.map((client, index) => (
-        <ClientItem logo={client.logo} key={index} />
+        <Fade down key={index} delay={100 * index}>
+          <ClientItem logo={client.logo} />
+        </Fade>
       ))}
     </div>
   )

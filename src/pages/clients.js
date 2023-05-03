@@ -3,7 +3,7 @@ import "./scss/about.scss"
 import React from "react"
 
 import Arrow from "../images/arrow-down.svg"
-import Clients from "../components/home-page/clients/clients"
+import Clients from "../components/clients/clients"
 import ContainerLabelled from "../components/container-labelled/container-labelled"
 import Image1 from "../components/about-page/image-1"
 import Image2 from "../components/about-page/image-2"

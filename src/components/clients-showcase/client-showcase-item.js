@@ -1,9 +1,23 @@
 import Fade from "react-reveal/Fade"
 import Img from "gatsby-image"
+import Modal from "react-modal"
 import PropsTyps from "prop-types"
-import React from "react"
+import ReactPlayer from "react-player"
+import React, { useState } from "react"
+
+Modal.setAppElement("#___gatsby") // To prevent the accessibility warning
 
 const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  const openModal = () => {
+    setModalIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false)
+  }
+
   return (
     <Fade bottom cascade distance="70px">
       <div className="case-studies-list-item">
@@ -26,7 +40,10 @@ const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
               </div>
             </Fade>
             <Fade bottom cascade distance="70px" delay={320}>
-              <div className="case-studies-list-item__play_wrapper">
+              <div
+                className="case-studies-list-item__play_wrapper"
+                onClick={openModal}
+              >
                 <img
                   src="/play.png"
                   alt={title}
@@ -40,11 +57,28 @@ const ClientsShowcaseItem = ({ title, logo, video, thumb }) => {
           </h2>
         </>
       </div>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        className="modal"
+        overlayClassName="overlay"
+      >
+        <button className="modal-close" onClick={closeModal}>
+          &times;
+        </button>
+        <ReactPlayer
+          url={video.file.url}
+          playing={modalIsOpen}
+          controls
+          width="100%"
+          height="100%"
+        />
+      </Modal>
     </Fade>
   )
 }
 
-ClientsShowcaseItem.porpsTypes = {
+ClientsShowcaseItem.propsTypes = {
   title: PropsTyps.string.isRequired,
   thumbSrc: PropsTyps.string.isRequired,
   thumb: PropsTyps.string.isRequired,

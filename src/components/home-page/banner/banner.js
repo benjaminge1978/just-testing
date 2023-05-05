@@ -1,15 +1,15 @@
-/* eslint-disable react/display-name */
-import React, { useRef, useEffect } from "react"
-import { gsap, TimelineLite, TweenMax, Back, Power3 } from "gsap"
-import SplitText from "../../../../gsap/SplitText"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Arrow from "../../../images/arrow-down.svg"
-import Video from "../banner/video/video"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
-
-
 import "./banner.scss"
+
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Img from "gatsby-image"
+/* eslint-disable react/display-name */
+import React, { useEffect, useRef } from "react"
+import { Back, TimelineLite, TweenMax, gsap } from "gsap"
+import { graphql, useStaticQuery } from "gatsby"
+
+import Arrow from "../../../images/arrow-down.svg"
+import SplitText from "../../../../gsap/SplitText"
+import Video from "../banner/video/video"
 
 export default () => {
   let app = useRef(null)
@@ -62,17 +62,22 @@ export default () => {
       </div>
       <div className="banner-section__inner">
         <h1 ref={el => (header = el)} className="banner-text">
-          <span>We love <div> experiences.</div></span>
-          <span>We create<div> them.</div></span>
+          <span>
+            We love <div> experiences.</div>
+          </span>
+          <span>
+            We create<div> them.</div>
+          </span>
           <AniLink
-                    className=""
-                    cover
-                    to="case-studies"
-                    direction="up"
-                    bg="#FFFFFF"
-                    aria-label="case-study-thumb"
-                  >See our portfolio →
-                  </AniLink>
+            className=""
+            cover
+            to="case-studies"
+            direction="up"
+            bg="#FFFFFF"
+            aria-label="case-study-thumb"
+          >
+            See our portfolio →
+          </AniLink>
           {/* <div className="rolling">
           <span className="under-title under1">Event production</span>
           <span className="under-title under2">Conferences</span>

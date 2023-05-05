@@ -1,31 +1,40 @@
-import React from "react"
-import PropsTypes from "prop-types"
-
 import "./container-labelled.scss"
 
+import Fade from "react-reveal/Fade"
+import PropsTypes from "prop-types"
+import React from "react"
+
 const ContainerLabelled = props => (
-  <div
-    className={
-      "container-labelled" + (props.className ? ` ${props.className}` : "")
-    }
-  >
+  <>
+    {props.title && (
+      <Fade bottom delay={100}>
+        <h2 className="container-title">{props.title}</h2>
+      </Fade>
+    )}
+
     <div
       className={
-        "container-labelled__label" +
-        (props.labelClassName ? ` ${props.labelClassName}` : "")
+        "container-labelled" + (props.className ? ` ${props.className}` : "")
       }
     >
-      {props.label}
+      <div
+        className={
+          "container-labelled__label" +
+          (props.labelClassName ? ` ${props.labelClassName}` : "")
+        }
+      >
+        {props.label}
+      </div>
+      <div
+        className={
+          "container-labelled__inner" +
+          (props.innerClassName ? ` ${props.innerClassName}` : "")
+        }
+      >
+        {props.children}
+      </div>
     </div>
-    <div
-      className={
-        "container-labelled__inner" +
-        (props.innerClassName ? ` ${props.innerClassName}` : "")
-      }
-    >
-      {props.children}
-    </div>
-  </div>
+  </>
 )
 
 ContainerLabelled.propsTypes = {

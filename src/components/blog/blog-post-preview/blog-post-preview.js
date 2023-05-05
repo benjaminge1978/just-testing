@@ -1,9 +1,8 @@
-import React from "react"
-import PropsTypes from "prop-types"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Fade from "react-reveal/Fade"
 import Img from "gatsby-image"
-import Arrow from "../../../images/arrow-right.svg"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import PropsTypes from "prop-types"
+import React from "react"
 
 const BlogPostPreview = ({ title, excerpt, thumb, date, slug }) => {
   return (
@@ -24,14 +23,13 @@ const BlogPostPreview = ({ title, excerpt, thumb, date, slug }) => {
             />
           </Fade>
         </AniLink>
-        
+
         <h2 className="blog-post-preview__title">
           <AniLink to={`/blog/${slug}`} className="animated-link">
             {title}
           </AniLink>
         </h2>
         <p className="blog-post-preview__excerpt">{excerpt}</p>
-       
       </div>
     </Fade>
   )

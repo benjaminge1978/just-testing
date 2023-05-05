@@ -48,20 +48,20 @@ module.exports = {
           // Setting this parameter is optional
           anonymize: true,
         },
-      facebookPixel: {
-        pixelId: "810638596071143",
-     }, 
+        facebookPixel: {
+          pixelId: "810638596071143",
+        },
         // Defines the environments where the tracking should be available  - default is ["production"]
         environments: ["production", "development"],
       },
     },
     {
-      resolve: 'gatsby-plugin-offline',
+      resolve: "gatsby-plugin-offline",
       options: {
-          navigateFallbackWhitelist: [/\/$/],
-      }
-  },
-    
+        navigateFallbackWhitelist: [/\/$/],
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

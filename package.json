@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
-    "gatsby": "^2.18.12",
+    "gatsby": "^5.9.0",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-canonical-urls": "^2.1.19",
     "gatsby-plugin-gdpr-cookies": "^1.0.4",
@@ -27,7 +27,7 @@
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sass": "^2.1.27",
-    "gatsby-plugin-sharp": "^2.3.13",
+    "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-plugin-transition-link": "^1.17.7",
     "gatsby-plugin-web-font-loader": "^1.0.4",

@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
-    "gatsby": "^2.18.12",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-canonical-urls": "^2.1.19",
     "gatsby-plugin-gdpr-cookies": "^1.0.4",

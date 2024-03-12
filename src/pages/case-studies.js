@@ -1,24 +1,27 @@
-import React from "react"
+import "./scss/case-studies.scss"
+
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PageHeading from "../components/page-heading/page-heading"
-import ContainerLabelled from "../components/container-labelled/container-labelled"
 import Arrow from "../images/arrow-down.svg"
 import CaseStudiesItem from "../components/case-studies/case-studies-item"
-
-import "./scss/case-studies.scss"
+import ContainerLabelled from "../components/container-labelled/container-labelled"
+import Layout from "../components/layout"
+import PageHeading from "../components/page-heading/page-heading"
+import React from "react"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const categories = data.allContentfulCaseCategory.nodes
 
   return (
     <Layout className="case-studies-page">
-      <SEO title="Case Studies" description="Seventa events portfolio. See some of our event work" />
+      <SEO
+        title="Case Studies"
+        description="Seventa events portfolio. See some of our event work"
+      />
       <PageHeading
         pageName="Case Studies"
         pageTitle="Here’s an insight into our world of events."
-        description="We are extremely proud of our client relationships and the range of services we provide. 
+        description="We are extremely proud of our client relationships and the range of services we provide.
         Experts in events. We deliver results;"
       >
         <ul className="case-studies-heading-links">

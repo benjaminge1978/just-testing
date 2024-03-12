@@ -1,17 +1,16 @@
+import "./case-category.scss"
+
+import Arrow from "../../images/arrow-down.svg"
+import CaseItem from "./case-item/case-item"
+import ContainerLabelled from "../container-labelled/container-labelled"
+import Layout from "../layout"
+import PageHeading from "../page-heading/page-heading"
 /* eslint-disable react/display-name */
 import React from "react"
-import { graphql } from "gatsby"
-import _ from "lodash"
-
-import Layout from "../layout"
 import SEO from "../seo"
-import ContainerLabelled from "../container-labelled/container-labelled"
-import PageHeading from "../page-heading/page-heading"
-import CaseItem from "./case-item/case-item"
 import Testimonial from "./testimonial/testimonial"
-import Arrow from "../../images/arrow-down.svg"
-
-import "./case-category.scss"
+import _ from "lodash"
+import { graphql } from "gatsby"
 
 export default ({ data }) => {
   const category = data.contentfulCaseCategory
@@ -20,7 +19,47 @@ export default ({ data }) => {
   var cases = _.partition(category.cases, function(caseItem) {
     return caseItem.caseCategories[0].name === category.name
   })
-  const filteredCases = _.concat(...cases)
+
+  function reorderItems(items) {
+    // Find items by title
+    const firstItemIndex = items.findIndex(
+      item => item.title === "Tobacco Docks Skylight"
+    )
+    const lastItemIndex = items.findIndex(
+      item => item.title === "Tequila Rose & Lambrini Festival Activation "
+    )
+
+    let firstItem, lastItem
+
+    // Move "Tobacco Docks Skylight" to the beginning
+    if (firstItemIndex > -1) {
+      firstItem = items.splice(firstItemIndex, 1)[0]
+    }
+
+    // Adjust the index for "Tequila Rose & Lambrini Festival Activation" if necessary
+    const newLastItemIndex =
+      lastItemIndex > firstItemIndex && firstItemIndex !== -1
+        ? lastItemIndex - 1
+        : lastItemIndex
+
+    // Move "Tequila Rose & Lambrini Festival Activation" to the end
+    if (newLastItemIndex > -1) {
+      lastItem = items.splice(newLastItemIndex, 1)[0]
+    }
+
+    // Re-insert the items at the correct positions
+    if (firstItem) {
+      items.unshift(firstItem)
+    }
+    if (lastItem) {
+      items.push(lastItem)
+    }
+
+    return items
+  }
+
+  const filteredCases = reorderItems(_.concat(...cases))
+  console.log("filteredCases:", filteredCases)
 
   return (
     <Layout className="case-category">

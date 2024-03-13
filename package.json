@@ -49,7 +49,8 @@
     "react-scrollmagic": "^2.1.1",
     "scrollmagic": "^2.0.7",
     "scrollmagic-plugin-gsap": "^1.0.4",
-    "sharp": "^0.23.4"
+    "sharp": "^0.23.4",
+    "swiper": "^6.0.4"
   },
   "devDependencies": {
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",

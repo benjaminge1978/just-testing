@@ -53,6 +53,10 @@
 
 .about-page {
 
+  &-instagram {
+    padding: 150px 110px;
+  }
+
   .page-heading {
 
     &__description {
@@ -66,6 +70,19 @@
 
       .container-labelled__inner {
         padding: 150px 110px;
+
+        h2 {
+          font-size: 2.5rem;
+          margin-bottom: 3rem;
+          max-width: 850px;
+        }
+      }
+    }
+
+    &--instagram {
+
+      .container-labelled__inner {
+        padding: 0px 110px 150px;
 
         h2 {
           font-size: 2.5rem;
@@ -169,8 +186,13 @@
     &-text {
 
       &--grey {
-
-  
+          h2 {
+            font-size: 1.7rem!important;
+            margin-bottom: 2rem!important;
+            max-width: 850px;
+          }
+        }
+      &--instagram {
           h2 {
             font-size: 1.7rem!important;
             margin-bottom: 2rem!important;
@@ -199,6 +221,12 @@
       }
 
       &--grey {
+
+        .container-labelled__inner {
+          padding: 75px 30px;
+        }
+      }
+      &--instagram {
 
         .container-labelled__inner {
           padding: 75px 30px;
@@ -237,21 +265,21 @@
       &-images {
         display: block;
         background: linear-gradient( to bottom, #99b1b1 0%, #99b1b1 50%, #efefef 50%, #efefef 100%);
-    
+
         &__item {
           width: 100%;
-    
+
           img {
             margin-bottom: 0;
           }
         }
       }
-    
+
       &-promo {
         background: linear-gradient(to bottom, white 0%, white 20%, #99b1b1 20%, #99b1b1 100%);
-    
+
         &__label {
-    
+
           svg {
             width: 15px;
             display: block;
@@ -259,14 +287,14 @@
             padding-top: 50px;
           }
         }
-    
+
         &__inner {
-    
+
           img, picture {
             margin-bottom: 0;
             display: block;
           }
-    
+
           img {
             margin-left: auto;
             width: 100%;
@@ -284,7 +312,7 @@
 
           &__inner {
             color: #333;
-    
+
 
             .long-dash-text__content {
 
@@ -322,5 +350,3 @@
     top:30px;
   }
 }
-
-

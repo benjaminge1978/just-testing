@@ -1,0 +1,57 @@
+.swiper-container {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; // Prevents the scaled image from overflowing the slide bounds
+
+    .slide-background {
+      width: 100%;
+      height: 450px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: transform 0.5s ease; // Adds a smooth transition effect
+
+      &:hover {
+        transform: scale(1.05); // Scales the image up slightly on hover
+      }
+    }
+  }
+
+  // Targeting the Swiper pagination bullets
+.swiper-pagination-bullet {
+  background: #717171; // Sets the color for all pagination bullets
+  opacity: 0.7; // Optional: Sets the opacity for inactive bullets to make them slightly transparent
+}
+
+// Targeting the active pagination bullet
+.swiper-pagination-bullet-active {
+  background: #ccffcc; // Ensures the active bullet has the same color, can adjust if you want it to stand out more
+  opacity: 1; // Optional: Makes the active bullet fully opaque
+}
+}
+.follow-link-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 16px;
+  width: auto;
+
+  .follow-link {
+    background: #ccffcc;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    padding: 6px 12px;
+    transition: all 0.3s ease; // Smooth transition for hover effects
+
+    &:hover {
+
+      transform: translateY(-5px); // Moves the link up slightly
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Adds a subtle shadow for depth
+    }
+  }
+}

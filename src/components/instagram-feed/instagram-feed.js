@@ -103,10 +103,11 @@ const SwiperComponent = () => {
             <div
               className="slide-background"
               style={{ backgroundImage: `url(${image.src})` }}
-            ></div>
+            >
+              <div className="overlay">Visit Instagram Post</div>
+            </div>
             <p className="image-caption">
-              {truncateCaption(image.caption, 20)}{" "}
-              {/* Adjust the number of words as needed */}
+              {truncateCaption(image.caption, 20)}
             </p>
           </SwiperSlide>
         ))}

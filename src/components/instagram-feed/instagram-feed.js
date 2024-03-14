@@ -107,7 +107,7 @@ const SwiperComponent = () => {
               <div className="overlay">Visit Instagram Post</div>
             </div>
             <p className="image-caption">
-              {truncateCaption(image.caption, 20)}
+              {truncateCaption(image.caption, 19)}
             </p>
           </SwiperSlide>
         ))}

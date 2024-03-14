@@ -1,9 +1,27 @@
 .swiper-container {
   .swiper-slide {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden; // Prevents the scaled image from overflowing the slide bounds
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      .slide-background {
+        transform: scale(1.05);
+      }
+
+      .overlay {
+        opacity: 1 !important;
+        z-index: 300000;
+      }
+
+      .image-caption {
+        color: #393939;
+        transform: scale(1.02);
+      }
+    }
 
     .slide-background {
       width: 100%;
@@ -12,26 +30,47 @@
       background-position: center;
       background-repeat: no-repeat;
       cursor: pointer;
-      transition: transform 0.5s ease; // Adds a smooth transition effect
+      transition: transform 0.5s ease;
+      position: relative;
+      z-index: 1;
 
-      &:hover {
-        transform: scale(1.05); // Scales the image up slightly on hover
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        font-size: 16px;
+        z-index: 2;
+        cursor: pointer;
+        text-align: center;
+        padding: 20px; // Ensures text padding for better readability
       }
     }
+
+    .image-caption {
+      color: #000;
+      background-color: #ccffcc;
+      padding: 16px;
+      text-align: left;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+      line-height: 1.8;
+      cursor: pointer;
+      height: 110px;
+      transition: color 0.5s ease, transform 0.5s ease;
+    }
   }
-
-  // Targeting the Swiper pagination bullets
-.swiper-pagination-bullet {
-  background: #717171; // Sets the color for all pagination bullets
-  opacity: 0.7; // Optional: Sets the opacity for inactive bullets to make them slightly transparent
 }
 
-// Targeting the active pagination bullet
-.swiper-pagination-bullet-active {
-  background: #ccffcc; // Ensures the active bullet has the same color, can adjust if you want it to stand out more
-  opacity: 1; // Optional: Makes the active bullet fully opaque
-}
-}
 .follow-link-container {
   display: flex;
   justify-content: flex-end;
@@ -44,14 +83,31 @@
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    letter-spacing: 1.1px;
     padding: 6px 12px;
-    transition: all 0.3s ease; // Smooth transition for hover effects
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.3s ease;
 
     &:hover {
-
-      transform: translateY(-5px); // Moves the link up slightly
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); // Adds a subtle shadow for depth
+      background: #b3ffb3;
+      transform: translateY(-5px);
     }
+  }
+}
+
+// Swiper Pagination Bullets
+.swiper-pagination-bullet {
+  background: #666868;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #2a3332;
+  opacity: 1;
+}
+
+.swiper-container {
+  .swiper-pagination {
+    bottom: -5px;
+    margin-top: 20px;
   }
 }
